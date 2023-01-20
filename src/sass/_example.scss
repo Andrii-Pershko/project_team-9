@@ -1,46 +1,50 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 li {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
 }
 
 :root {
-  --primal-color: #84A178;
-  --second-color: #F8D24E;
-  --hover-color: #0A8817;
-  --focus-color: #FCFCFC;
-  --disablet-color: #ABABAB;
-
+	--primal-color: #84a178;
+	--second-color: #f8d24e;
+	--hover-color: #0a8817;
+	--focus-color: #fcfcfc;
+	--disablet-color: #ababab;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
 }
 
 body {
-  font-family: "Monserate", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
+	font-family: "Monserate", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
 }
 
 .container {
 	width: 100%;
-	max-width: 420px;
+	max-width: 480px;
 	height: 100%;
 	background-color: var(--primal-color);
-	padding: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin: auto;
-	margin-top: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -58,8 +62,3 @@ body {
 		padding-right: 16px;
 	}
 }
-
-
-
-
-
