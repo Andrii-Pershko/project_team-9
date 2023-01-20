@@ -1,33 +1,9 @@
-.container {
-	width: 100%;
-    max-width: 420px;
-    height: 100%;
-	background-color: var(--primal-color);
-	padding: 20px;
-	margin: auto;
-    margin-top: 20px;
-}
+
 
 .test-img {
 	max-width: 280px;
-    margin: auto;
-    width: 100%;
-    display: block;
+	margin: auto;
+	width: 100%;
+	display: block;
 }
 
-@media screen and (min-width: 768px) {
-	.container {
-		max-width: 768px;
-		padding-left: 32px;
-		padding-right: 32px;
-	}
-}
-
-@media screen and (min-width: 1200px) {
-	.container {
-		max-width: 1200px;
-		padding-left: 16px;
-		padding-right: 16px;
-
-	}
-}

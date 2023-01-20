@@ -29,21 +29,35 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: "Monserate", sans-serif;
-  padding-bottom: 20px;
+  font-weight: 500;
+  font-size: 16px;
 }
 
+.container {
+	width: 100%;
+	max-width: 420px;
+	height: 100%;
+	background-color: var(--primal-color);
+	padding: 20px;
+	margin: auto;
+	margin-top: 20px;
+}
 
-  // .container {
-  //   width: 100%;
-  //   max-width: 428px;
-  //   padding-left: 16px;
-  //   padding-right: 16px;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // }
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: 768px;
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+}
 
-
-
+@media screen and (min-width: 1200px) {
+	.container {
+		max-width: 1200px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+}
 
 
 
