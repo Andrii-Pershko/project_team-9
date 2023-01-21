@@ -2,7 +2,7 @@
 /* 0-px - 767px */
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
-	.section-products {
+	.section {
 		background-image: url(C:\Users\Admin\Desktop\Projects\project_team-9\src\images\img\products\Backgroud\backgroud_mobile.png);
 		background-repeat: no-repeat;
 		background-position: center;
@@ -58,7 +58,10 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 }
 @media screen and (min-width: 1200px) {
-	.section-products {
+	:root {
+		--card-set-gap: 29px;
+	}
+	.section {
 		background-image: url(C:/Users/Admin/Desktop/Projects/project_team-9/src/images/img/products/Backgroud/backgroud_desktop.png);
 		background-repeat: no-repeat;
 		background-position: center;
@@ -66,13 +69,6 @@
 		width: 1200px;
 		padding: 0 auto;
 		margin: 0 auto;
-	}
-	.container {
-		max-width: 1168px;
-		padding-left: 20px;
-		padding-right: 20px;
-		margin-left: auto;
-		margin-right: auto;
 	}
 
 	h1 {
@@ -88,39 +84,56 @@
 		text-align: center;
 		color: #131313;
 	}
-
-	h2 {
-		font-family: Montserrat;
-		font-size: 20px;
-		font-weight: 700;
-		line-height: 1.2;
-		letter-spacing: 0.04em;
-		text-align: center;
-	}
-	.card-set {
+	.products-card-set {
 		display: flex;
 		flex-wrap: wrap;
-		margin-top: calc(-1 * var(--card-set-gap--));
-		margin-left: calc(-1 * var(--card-set-gap--));
+		margin-top: calc(-1 * 29px);
+		margin-left: calc(-1 * 29px);
 		padding: 0;
 		margin: 0;
 		list-style: none;
 	}
-	.card-set > .item {
+	.products-card-set > .products-card-item {
 		flex-basis: calc(100% / 3 - 29px);
-		margin-left: var(--card-set-gap--);
-		margin-top: var(--card-set-gap--);
+		margin-left: 29px;
+		margin-top: 29px;
 	}
 	.card {
+		padding-left: 34px;
+		padding-right: 34px;
+		max-width: 370px;
 		background-color: #efd478;
 		border-radius: 24px;
 		overflow: hidden;
+	}
+	.card-thumb {
+		width: 302px;
+		height: 318px;
+		margin-bottom: 30px;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+		height: auto;
 	}
 	.card-content {
 		padding-left: 64px;
 		padding-right: 64px;
 		padding-bottom: 60px;
 	}
+	.card-title {
+		font-family: Montserrat;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 1.2;
+		letter-spacing: 0.04em;
+		text-align: center;
+		margin-top: 0;
+		margin-bottom: 66px;
+	}
+
 	.card-text {
 		font-family: Montserrat;
 		font-size: 14px;
@@ -128,13 +141,10 @@
 		line-height: 1.78;
 		letter-spacing: 0.04em;
 		text-align: center;
-		margin-top: 66px;
+		margin-bottom: 50px;
 	}
-	.product-card-item {
-		height: 420px;
-		width: 280px;
-		left: 273px;
-		top: 280px;
-		border-radius: 50%;
+	.products-card-item {
+		height: 536px;
+		width: 370px;
 	}
 }
