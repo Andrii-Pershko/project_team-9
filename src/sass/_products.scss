@@ -1,0 +1,59 @@
+/*--for Mobile Productions--*/
+/* 0-px - 767px */
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+	.section-products {
+		background-image: url(../src/images/img/products/Backgroud/backgroud_mobile.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		width: 320px;
+		padding: 0 auto;
+		margin: 0 auto;
+	}
+
+	h1 {
+		width: 270px;
+		left: 278px;
+		top: 94px;
+
+		font-family: Seymour One;
+		font-size: 30px;
+		font-weight: 400;
+		line-height: 1.26;
+		letter-spacing: 0.04em;
+		text-align: center;
+		color: #131313;
+	}
+
+	h2 {
+		font-family: Montserrat;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 1.2;
+		letter-spacing: 0.04em;
+		text-align: center;
+	}
+	.card-text {
+		font-family: Montserrat;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 25px;
+		letter-spacing: 0.04em;
+		text-align: center;
+	}
+	.product-card-item {
+		height: 420px;
+		width: 280px;
+		left: 273px;
+		top: 280px;
+		border-radius: 50%;
+	}
+}
+/*--Mobile 480px--*/
+@media screen and (min-width: 480px) and (max-width: 767px) {
+}
+/*--F0R TABLET--*/
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+}
