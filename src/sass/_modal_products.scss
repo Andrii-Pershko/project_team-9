@@ -9,6 +9,9 @@
     background-color: #FCFCFC;
     border: 2px solid #F8D24E;
     border-radius: 10px;
+
+    max-height: 100%;
+    overflow-y: auto
 }
 
 
@@ -218,4 +221,11 @@ margin-top: 24px;
     line-height: 1.2;
     padding: 12px 34px;
     cursor: pointer;
+}
+
+@media screen and (min-width: 480px) {
+    .modal-ingredients {
+    max-width: 568px;
+    max-height: 996px;
+}
 }
