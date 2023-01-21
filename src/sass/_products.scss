@@ -3,7 +3,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
 	.section-products {
-		/*background-image: url(../images/img/products/Backgroud/backgroud_mobile.png);*/
+		background-image: url(C:\Users\Admin\Desktop\Projects\project_team-9\src\images\img\products\Backgroud\backgroud_mobile.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -56,4 +56,85 @@
 /*--F0R TABLET--*/
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+}
+@media screen and (min-width: 1200px) {
+	.section-products {
+		background-image: url(C:/Users/Admin/Desktop/Projects/project_team-9/src/images/img/products/Backgroud/backgroud_desktop.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		width: 1200px;
+		padding: 0 auto;
+		margin: 0 auto;
+	}
+	.container {
+		max-width: 1168px;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	h1 {
+		/*width: 270px;
+    left: 278px;
+    top: 94px;*/
+
+		font-family: Seymour One;
+		font-size: 30px;
+		font-weight: 400;
+		line-height: 1.26;
+		letter-spacing: 0.04em;
+		text-align: center;
+		color: #131313;
+	}
+
+	h2 {
+		font-family: Montserrat;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 1.2;
+		letter-spacing: 0.04em;
+		text-align: center;
+	}
+	.card-set {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: calc(-1 * var(--card-set-gap--));
+		margin-left: calc(-1 * var(--card-set-gap--));
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	.card-set > .item {
+		flex-basis: calc(100% / 3 - 29px);
+		margin-left: var(--card-set-gap--);
+		margin-top: var(--card-set-gap--);
+	}
+	.card {
+		background-color: #efd478;
+		border-radius: 24px;
+		overflow: hidden;
+	}
+	.card-content {
+		padding-left: 64px;
+		padding-right: 64px;
+		padding-bottom: 60px;
+	}
+	.card-text {
+		font-family: Montserrat;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.78;
+		letter-spacing: 0.04em;
+		text-align: center;
+		margin-top: 66px;
+	}
+	.product-card-item {
+		height: 420px;
+		width: 280px;
+		left: 273px;
+		top: 280px;
+		border-radius: 50%;
+	}
 }
