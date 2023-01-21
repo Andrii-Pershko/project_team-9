@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--primal-color);
 }
 
 .logo-img {
@@ -30,8 +31,7 @@
 .mobil-menu-open-icon {
   width: 32px;
   height: 32px;
-  fill: #F8D24E;
-  transition: border-color var(--transition-duration-and-funk);
+  color: #F8D24E;
 }
 
 .mobil-menu-open-icon:hover,
