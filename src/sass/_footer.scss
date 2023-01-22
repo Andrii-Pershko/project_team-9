@@ -1,3 +1,131 @@
-.open_modal_one {
-	color: var(--primal-color);
+
+.footer{
+  background-color: #84A178;
+}
+
+.footer-copy{
+  border-bottom: 1px solid#E1E1E1;
+  flex-direction: column;
+}
+
+
+@media screen and (min-width: 1200px) {
+	
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .row-top {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    /* identical to box height */
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FCFCFC;
+  }
+  
+  .row-bottom{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 71px;
+    /* identical to box height */
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FCFCFC;
+  }
+  
+  .row-contact {
+    display: inline-block;
+  }
+  
+  .row-contact a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #84A178;
+  }
+  
+  .contact-list {
+    justify-content: end;
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    text-align: right;
+  }
+  
+  .row-list > li {
+    width: 34px;
+    height: 34px;
+  }
+  
+  .row-item {
+    background-color: #F8D24E;
+    border-radius: 50%;
+  }
+  
+  .row-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .row-item:hover,
+  .row-item:active {
+    fill: #FCFCFC;
+  }
+  
+  .row-phone {
+    display: flex;
+    width: 338px;
+    text-align: left;
+    float: right;
+  }
+  
+  .row-phone-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 0.02em;
+    color: #131313;
+  }
+  
+  .row-phone-text {
+    padding-right: 4px;
+  }
+  
+  .row-phone-link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+  }
+  
+  .row-phone-link {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  
+ 
+  .copy-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 186%;
+    /* or 22px */
+    letter-spacing: 0.02em;
+    color: #7A7A7A;
+    text-align: center;
+  }
 }
