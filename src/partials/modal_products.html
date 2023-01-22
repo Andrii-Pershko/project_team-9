@@ -114,18 +114,23 @@
 </li>
 </ul>
 
-<form class="modal-ingredients-form">
+<!-- Form -->
 
-	<label class="modal-ingredients-form-field" for="name">
-	</label>
-		<input type="text" class="modal-ingredients-form-input" name="name" placeholder="Name"/>
-	</label>
+<form class="modal-ingredients-form" autocomplete="on">
+
+	<label class="modal-ingredients-form-field" for="name-icecream">
+		<input type="text" class="modal-ingredients-form-input" name="name" required id="name-icecream" placeholder="Name"/></label>
 	
-	<label class="form-field" for="phone"></label>
-		<input type="text" class="modal-ingredients-form-input" name="phone" placeholder="Phone"/>	
-	<label class="modal-ingredients-form-field" for="textarea"></label>
-		<textarea class="modal-ingredients-form-input-text" name="input-text" id="textarea" cols="30" rows="10" placeholder="Comment"></textarea>
+	<label class="form-field" for="phone-icecream">
+		<input type="tel" class="modal-ingredients-form-input" name="phone" required
+		minlength="10" maxlength="13" id="phone-icecream" placeholder="Phone"/></label>
+
+	<label class="modal-ingredients-form-field" for="textarea-icecream">
+
+		<textarea class="modal-ingredients-form-input-text"
+		name="input-text" id="textarea-icecream" cols="30" rows="10" placeholder="Comment"></textarea>
 	</label>	
+
 		<button type="submit" class="modal-ingredients-subscribe-button">Submit
 			</button>
 	</form>
@@ -240,21 +245,22 @@
 </li>
 </ul>
 
-<form class="modal-ingredients-form">
+<!-- Form -->
 
-<label class="modal-ingredients-form-field" for="name">
+<form class="modal-ingredients-form" autocomplete="on">
+
+<label class="modal-ingredients-form-field" for="name-icecoffe">
+	<input type="text" class="modal-ingredients-form-input" id="name-icecoffe" name="name"
+	required placeholder="Name"/>
 </label>
-	<input type="text" class="modal-ingredients-form-input" name="name"
-	placeholder="Name"/>
-</label>
 
-<label class="form-field" for="phone"></label>
-	<input type="text" class="modal-ingredients-form-input" name="phone"
-	placeholder="Phone"/>
+<label class="form-field" for="phone-icecoffe">
+	<input type="tel" class="modal-ingredients-form-input" name="phone" required 
+	minlength="10" maxlength="13" id="phone-icecoffe" placeholder="Phone"/></label>
 
 
-<label class="modal-ingredients-form-field" for="textarea"></label>
-	<textarea class="modal-ingredients-form-input-text" name="input-text" id="textarea" cols="30" rows="10" placeholder="Comment"></textarea>
+<label class="modal-ingredients-form-field" for="textarea-icecoffe">
+	<textarea class="modal-ingredients-form-input-text" name="input-text" id="textarea-icecoffe" cols="30" rows="10" placeholder="Comment"></textarea>
 </label>
 
 
@@ -380,21 +386,22 @@
 </li>
 </ul>
 
-<form class="modal-ingredients-form">
+<!-- Form -->
 
-<label class="modal-ingredients-form-field" for="name">
+<form class="modal-ingredients-form" autocomplete="on">
+
+<label class="modal-ingredients-form-field" for="name-milkshakes">
+	<input type="text" class="modal-ingredients-form-input" name="name" required 
+	id="name-milkshakes" placeholder="Name"/>
 </label>
-	<input type="text" class="modal-ingredients-form-input" name="name"
-	placeholder="Name"/>
-</label>
 
-<label class="form-field" for="phone"></label>
-	<input type="text" class="modal-ingredients-form-input" name="phone"
-	placeholder="Phone"/>
+<label class="form-field" for="phone-milkshakes">
+	<input type="text" class="modal-ingredients-form-input" name="phone" required 
+	minlength="10" maxlength="13" id="phone-milkshakes" placeholder="Phone"/></label>
 
 
-<label class="modal-ingredients-form-field" for="textarea"></label>
-	<textarea class="modal-ingredients-form-input-text" name="input-text" id="textarea" cols="30" rows="10" placeholder="Comment"></textarea>
+<label class="modal-ingredients-form-field" for="textarea-milkshakes">
+	<textarea class="modal-ingredients-form-input-text" name="input-text" id="textarea-milkshakes" cols="30" rows="10" placeholder="Comment"></textarea>
 </label>
 
 
