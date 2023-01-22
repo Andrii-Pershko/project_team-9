@@ -39,9 +39,11 @@ p {
 	background-image: url(../images/img/advantages/cow-min.png);
 	transition-property: transform;
 	transition-duration: 1500ms;
+	transition-delay: 0ms;
 }
 
-.advantages-item.icon-cow:hover:before {
+.advantages-item.icon-cow:hover:before,
+.advantages-item.icon-cow:focus:before {
 	transform: scale(1.5);
 }
 
@@ -54,28 +56,44 @@ p {
 	}
 }
 
-.advantages-item.icon-weight::before {
+.advantages-item.icon-weight:before {
 	background-image: url(../images/img/advantages/weight-min.png);
+	transition-property: transform;
+	transition-duration: 1500ms;
+	transition-delay: 0ms;
+}
+
+.advantages-item.icon-weight:hover:before,
+.advantages-item.icon-weight:focus:before {
+	transform: scale(1.5);
 }
 
 @media screen and (min-device-pixel-ratio: 2),
 	(-webkit-min-device-pixel-ratio: 2),
 	(min-resolution: 192dpi),
 	(min-resolution: 2dppx) {
-	.advantages-item.icon-weight::before {
+	.advantages-item.icon-weight:before {
 		background-image: url(../images/img/advantages/weight-min.2x.png);
 	}
 }
 
-.advantages-item.icon-ice-cream::before {
+.advantages-item.icon-ice-cream:before {
 	background-image: url(../images/img/advantages/ice.crema-min.png);
+	transition-property: transform;
+	transition-duration: 1500ms;
+	transition-delay: 0ms;
+}
+
+.advantages-item.ice-cream:hover:before,
+.advantages-item.ice-cream:focus:before {
+	transform: scale(1.5);
 }
 
 @media screen and (min-device-pixel-ratio: 2),
 	(-webkit-min-device-pixel-ratio: 2),
 	(min-resolution: 192dpi),
 	(min-resolution: 2dppx) {
-	.advantages-item.icon-ice-cream::before {
+	.advantages-item.icon-ice-cream:before {
 		background-image: url(../images/img/advantages/ice.crema-min.2x.png);
 	}
 }
