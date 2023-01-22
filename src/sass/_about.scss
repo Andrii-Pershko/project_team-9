@@ -60,15 +60,20 @@
 }
 
 .foto {
-    position: relative;
-    display: flex;
-    width: 280px;
-    height: 280px;
-    background-color: var(--second-color);
-    border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
+            position: relative;
+            display: flex;
+            width: 280px;
+            height: 280px;
+            background-color: var(--second-color);
+            border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+}
+.cow {
+    position: absolute;
+    top: 20px;
+    left: 0;
 }
 
 .fon {
@@ -229,4 +234,28 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.28;
+}
+.modal-open:hover{
+    background-color: var(--hover-color);
+    
+}
+.modal-open:focus {
+    background-color: var(--hover-color);
+    color: var(--focus-color);
+}
+/*---------- tablet --------------*/
+@media screen and (min-with:780px) {
+    .about {
+            display: flex;
+            flex-direction: column;
+            background: #84A178;
+            width: 780px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+    
+    
+        }
+    
 }
