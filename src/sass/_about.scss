@@ -57,6 +57,15 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
+    width: 224px;
+    height: 199px;
+}
+.title-video{
+    width: 224px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 28px;
 }
 
 .foto {
@@ -226,7 +235,7 @@
     text-decoration: none;
     background-color: var(--second-color);
     margin-top: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
     color: #000000;
@@ -244,18 +253,39 @@
     color: var(--focus-color);
 }
 /*---------- tablet --------------*/
-@media screen and (min-with:780px) {
+@media screen and (min-width:780px) {
     .about {
-            display: flex;
+            width: 768px;
             flex-direction: column;
-            background: #84A178;
-            width: 780px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 20px;
-            padding-right: 20px;
+
+    
+    
+    }
+    .modal {
+        max-width: 568px;
+    }
+    
+    .iframe-video {
+        width: 448px;
+    
+    }
+    
+    .title-video {
+        width: 448px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    
+}
+@media screen and (min-width:1200px) {
+    .about {
+            width: 1200px;
+            flex-direction: column;
+    
     
     
         }
-    
+  
 }
