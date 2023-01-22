@@ -9,6 +9,7 @@ p {
 	justify-content: center;
 	background-color: var(--primal-color);
 	padding-bottom: 80px;
+
 }
 
 .advantages-list {
@@ -29,10 +30,11 @@ p {
 	border-radius: 50%;
 	margin: 0px auto 16px;
 
-	background-size: contain;
+	background-size: 50px 50px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: var(--second-color);
+
 }
 
 .advantages-item.icon-cow:before {
