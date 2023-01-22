@@ -37,6 +37,12 @@ p {
 
 .advantages-item.icon-cow:before {
 	background-image: url(../images/img/advantages/cow-min.png);
+	transition-property: transform;
+	transition-duration: 1500ms;
+}
+
+.advantages-item.icon-cow:hover:before {
+	transform: scale(1.5);
 }
 
 @media screen and (min-device-pixel-ratio: 2),
