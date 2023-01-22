@@ -296,8 +296,6 @@ margin-top: 24px;
 }
 
 
-
-
 .modal-ingredients-list {
     column-gap: 20px;
     justify-content: center;
@@ -323,6 +321,8 @@ height: 53px;
     font-size: 12px;
 }
 
+
+
 .modal-ingredients-text-contane {
     font-size: 12px;
 line-height: 1.25px;
@@ -336,11 +336,16 @@ line-height: 1.25px;
         margin-top: 48px;
     }
 
+    
+
 
     .modal-ingredients-subscribe-button {
         width: 121px;
         margin-top: 32px;
     }
 
+    .modal-ingredients-form-input {
+        max-width: 368px;
+    }
 
 }
