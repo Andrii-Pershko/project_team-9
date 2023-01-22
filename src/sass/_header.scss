@@ -18,6 +18,7 @@
   justify-content: flex-end;
 }
 
+<<<<<<< Updated upstream
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -31,6 +32,8 @@
   margin: -1px;
 }
 
+=======
+>>>>>>> Stashed changes
 /* ================ MOBIL MENU ==================== */
 /* кнопка відкриття мобільного меню */
 
@@ -43,10 +46,15 @@
 .mobil-menu-open-icon {
   width: 32px;
   height: 32px;
+<<<<<<< Updated upstream
+=======
+  fill: var(--primal-color);
+>>>>>>> Stashed changes
 }
 
 .mobil-menu-open-icon:hover,
 .mobil-menu-open-icon:focus .mobile-menu__icon-close {
+<<<<<<< Updated upstream
   fill: var(--hover-color);
   cursor: pointer;
 }
@@ -57,6 +65,17 @@
   height: 568px;
   background-color: var(--primal-color);
 
+=======
+  fill: var(--focus-color);
+  cursor: pointer;
+}
+/* /--------------------------------------------------- */
+// ================= Mobil window ======================
+
+.menu-container {
+  height: 568px;
+  background-color: var(--primal-color);
+>>>>>>> Stashed changes
 }
 
 .menu-logo-btn {
@@ -78,6 +97,7 @@
 .mobile-menu {
   position: fixed;
   top: 0;
+<<<<<<< Updated upstream
   right: -100%;
   background-color: transparent;
   width: 100%;
@@ -89,6 +109,21 @@
 .mobile-menu.is-open {
   pointer-events: auto;
   right: 0;
+=======
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+>>>>>>> Stashed changes
 }
 
 .mobile-nav {
@@ -106,11 +141,19 @@
   font-size: 32px;
   line-height: 1.22;
 
+<<<<<<< Updated upstream
   color: var(--focus-color);
 }
 
 .mobile-menu-link:hover {
   color: #131313;
+=======
+  color: var(--second-color);
+}
+
+.mobile-menu-link:hover {
+  color: var(--hover-color);
+>>>>>>> Stashed changes
 }
 
 .mobile-menu-link:focus {
@@ -149,6 +192,7 @@
   fill: var(--focus-color);
 }
 
+<<<<<<< Updated upstream
 
 
 .mobile-close-btn {
@@ -163,17 +207,39 @@
 .mobile-close-btn:hover,
 .mobile-close-btn:focus {
   fill: var(--second-color);
+=======
+.mobile-close-btn {
+  fill: var(--second-color);
+  cursor: pointer;
+  border-color: transparent;
+  background-color: var(--primal-color);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  padding-top: 5px;
+}
+
+.mobile-close-btn:hover {
+  fill: var(--hover-color);
+}
+
+.mobile-close-btn:focus {
+  fill: var(--focus-color);
+>>>>>>> Stashed changes
 }
 
 
 /* ==================================================== */
 /* Кнопка модального вікна */
+<<<<<<< Updated upstream
 // .js-open-modal {
 //   display: none;
 //   margin: 0;
 
 // }
 
+=======
+>>>>>>> Stashed changes
 .modal-btn {
   font-weight: 600;
   font-size: 14px;
@@ -210,7 +276,14 @@
   border: none;
 }
 
+<<<<<<< Updated upstream
 /* ======================================= 480 ===================================== */
+=======
+.modal-btn:disabled {
+  background-color: var(--disablet-color);
+}
+
+>>>>>>> Stashed changes
 @media screen and (max-width: 767px) {
   .modal-btn {
     display: none;
@@ -257,10 +330,13 @@
 /* ======================================= Desctop ================================= */
 @media screen and (min-width: 1200px) {
 
+<<<<<<< Updated upstream
   .container {
     width: 1200px;
   }
 
+=======
+>>>>>>> Stashed changes
   .general {
     margin-top: 8px;
   }
@@ -289,6 +365,7 @@
     line-height: 1.25;
     display: flex;
     align-items: center;
+<<<<<<< Updated upstream
     color: var(--focus-color);
   }
 
@@ -298,6 +375,17 @@
 
   .menu-link:focus {
     color: var(--focus-color);
+=======
+    color: #F8D24E;
+  }
+
+  .menu-link:hover {
+    color: #0A8817;
+  }
+
+  .menu-link:focus {
+    color: #FCFCFC;
+>>>>>>> Stashed changes
   }
 
   .mobile-menu {
