@@ -161,7 +161,7 @@
     padding-right: 28px;
     padding-top: 28px;
     padding-bottom: 20px;
-    border: 2px solid yellow;
+    border: 2px solid var(--second-color);
     border-radius: 10px;
 
     /*  Установаем ширину окна  */
@@ -219,7 +219,7 @@
     padding-left: 34px;
     display: inline-block;
     text-decoration: none;
-    background-color: yellow;
+    background-color: var(--second-color);
     margin-top: 10px;
     margin-bottom: 25px;
     margin-left: auto;
