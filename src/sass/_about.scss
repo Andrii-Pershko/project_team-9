@@ -91,11 +91,7 @@
     margin-right: auto;
 }
 
-.cow {
-    position: absolute;
-    top: 20px;
-    left: 0;
-}
+
 
 
 .title-tradition {
@@ -277,6 +273,74 @@
         margin-top: 32px;
         margin-bottom: 32px;
     }
+ .foto {
+     position: relative;
+     display: flex;
+     width: 330px;
+     height: 330px;
+     background-color: var(--second-color);
+     border-radius: 50%;
+     margin-left: 0;
+     margin-right: 38px;
+
+     margin-bottom: 0;
+ }
+
+ .cow {
+     width: 330px;
+     height: 330px;
+     position: absolute;
+     top: 20px;
+     left: 0;
+ }
+
+ .text {
+     display: flex;
+     flex-direction: row;
+ }
+ .title-how{
+    margin-bottom: 80px;
+ }
+
+ .about-list {
+     margin-top: 0;
+ }
+
+ .about-item {
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 194%;
+     color: #FCFCFC;
+     width: 330px;
+     margin: 0;
+     list-style: none;
+ }
+
+ .list-button {
+     display: flex;
+     flex-direction: column;
+     width: 330px;
+
+ }
+
+ .modal-open {
+     width: 164px;
+     height: 42px;
+     padding-top: 12px;
+     padding-bottom: 12px;
+     padding-left: 34px;
+     display: inline-block;
+     text-decoration: none;
+     background-color: var(--second-color);
+     margin-top: 32px;
+     margin-bottom: 50px;
+     margin-left: 0;
+     color: #000000;
+     border-radius: 10px;
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 1.28;
+ }
     
 }
 @media screen and (min-width:1200px) {
@@ -287,5 +351,63 @@
     
     
         }
-  
+    .foto{
+        position: relative;
+        display: flex;
+        width: 480px;
+        height: 480px;
+        background-color: var(--second-color);
+        border-radius: 50%;
+        margin-left: 0;
+        margin-right: 109px;
+        
+        margin-bottom: 60px;
+    }
+    .cow {
+        width: 480px;
+        height: 480px;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        }
+		.text{
+            display: flex;
+            flex-direction: row;
+        }
+    .about-list{
+        margin-top: 135px;
+    }
+    .about-item {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 194%;
+            color: #FCFCFC;
+            width: 463px;
+            margin:0;
+            list-style: none;
+        }
+    .list-button{
+        display: flex;
+        flex-direction: column;
+        width: 463px;
+
+    }
+    .modal-open {
+            width: 164px;
+            height: 42px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 34px;
+            display: inline-block;
+            text-decoration: none;
+            background-color: var(--second-color);
+            margin-top: 54px;
+            margin-bottom: 50px;
+            margin-left: 0;
+            color: #000000;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 1.28;
+        }
 }
