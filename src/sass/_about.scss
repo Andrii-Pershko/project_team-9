@@ -1,7 +1,7 @@
 .about {
     display: flex;
     flex-direction: column;
-    background: #84A178;
+    background: var(--primal-color);
     
     justify-content: center;
     
@@ -43,7 +43,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background: #F8D24E;
+    background: var(--second-color);
     border-radius: 10px;
     margin-top: 24px;
     margin-bottom: 25px;
@@ -111,7 +111,7 @@
     margin-right: auto;
     margin-top: 60px;
     margin-bottom: 12px;
-    color: #FCFCFC;
+    color: var(--focus-color);
 }
 
 .title-how {
@@ -126,7 +126,7 @@
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 32px;
-    color: #FCFCFC;
+    color: var(--focus-color);
 }
 
 .about-list {
@@ -139,7 +139,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 162%;
-    color: #FCFCFC;
+    color:var(--focus-color);
     width: 220px;
     margin: 0;
     list-style: none;
@@ -201,7 +201,7 @@
     box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
     text-align: center;
     padding: 30px;
-    background-color: #fff;
+    background-color: var(--focus-color);
     transition: 0.3s all;
 }
 
@@ -339,7 +339,7 @@
      font-weight: 400;
      font-size: 14px;
      line-height: 194%;
-     color: #FCFCFC;
+     color:var(--focus-color);
      width: 330px;
      margin: 0;
      list-style: none;
@@ -426,7 +426,7 @@
             font-weight: 400;
             font-size: 14px;
             line-height: 194%;
-            color: #FCFCFC;
+            color:var(--focus-color);
             width: 463px;
             margin:0;
             list-style: none;
@@ -448,7 +448,7 @@
     .icon-svg:focus {
         background-color: var(--hover-color);
         color: var(--focus-color);
-        fill: white;
+        fill:var(--focus-color);
     }
     .modal-open {
             width: 164px;
