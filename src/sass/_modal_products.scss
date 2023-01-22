@@ -1,3 +1,6 @@
+
+// Icecream
+
 .modal-ingredients {
     position: absolute;
     top: 50%;
@@ -27,7 +30,7 @@
     text-transform: uppercase;
 }
 
-.modal-ingredients-img-thumb {
+.modal-icecream-img-thumb {
     position: relative;
     width: 132px;
     height: 132px;
@@ -38,7 +41,7 @@
     
 }
 
-.modal-ingredients-img {
+.modal-icecream-img {
     position: absolute;
     display: block;
     // transform: translatey(-7px);
@@ -48,7 +51,7 @@
 
 }
 
-.modal-ingredients-img:hover {
+.modal-icecream-img:hover {
 transform: rotate(360deg);
 transition-property: transform;
 transition-duration: 500ms;
@@ -223,9 +226,121 @@ margin-top: 24px;
     cursor: pointer;
 }
 
+
+// Icecoffe
+
+.modal-icecoffee-img-thumb {
+    position: relative;
+    width: 132px;
+    height: 132px;
+    background-color: rgba(248, 210, 78, 0.7);
+    border-radius: 50%;
+    box-shadow:  0 5.26027px 19.726px #EFD478;
+    margin: 0 auto;
+    
+}
+
+.modal-icecoffee-img {
+    position: absolute;
+    display: block;
+    bottom: 7px;
+    border-radius: 50%;
+    
+
+}
+
+.modal-icecoffee-img:hover {
+    transform: rotate(360deg);
+    transition-property: transform;
+    transition-duration: 500ms;
+    }
+
+
+// milkshakes
+
+.modal-milkshakes-img-thumb {
+    position: relative;
+    width: 132px;
+    height: 132px;
+    background-color: #D6936D;
+    border-radius: 50%;
+    box-shadow:  0 5.26027px 19.726px #D6936D;
+    margin: 0 auto;
+    
+}
+
+.modal-milkshakes-img {
+    position: absolute;
+    display: block;
+    bottom: 7px;
+    border-radius: 50%;
+    
+
+}
+
+.modal-milkshakes-img:hover {
+    transform: rotate(360deg);
+    transition-property: transform;
+    transition-duration: 500ms;
+    }
+
+
+
+
+// Tablet, Desctop
+
 @media screen and (min-width: 480px) {
     .modal-ingredients {
     max-width: 568px;
-    // max-height: 996px;
+    padding: 32px 40px;
 }
+
+
+
+
+.modal-ingredients-list {
+    column-gap: 20px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.modal-list-contane {
+    width: 65px;
+    height: 90px;
+}
+
+.contane {
+width: 53px;
+height: 53px;
+    
+}
+
+.title-modal-ingredients {
+    margin-bottom: 31px;
+}
+
+.modal-ingredients-text-amount {
+    font-size: 12px;
+}
+
+.modal-ingredients-text-contane {
+    font-size: 12px;
+line-height: 1.25px;
+}
+
+.modal-ingredients-title-product {
+    margin-top: 48px;
+}
+
+    .modal-ingredients-form {
+        margin-top: 48px;
+    }
+
+
+    .modal-ingredients-subscribe-button {
+        width: 121px;
+        margin-top: 32px;
+    }
+
+
 }
