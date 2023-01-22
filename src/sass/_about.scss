@@ -103,6 +103,7 @@
 
 
 .title-tradition {
+    font-family: 'Montserrat';
     font-weight: 700;
     font-size: 18px;
     line-height: 1.22;
@@ -114,6 +115,7 @@
 }
 
 .title-how {
+    font-family: 'Seymour One';
     font-weight: 400;
     font-size: 30px;
     line-height: 1.26;
@@ -144,6 +146,7 @@
 }
 
 .subtitle {
+    font-family: 'Montserrat';
     margin: 0;
 }
 
@@ -248,14 +251,31 @@
     font-size: 14px;
     line-height: 1.28;
 }
-.modal-open:hover{
+
+.modal-open:hover,
+.icon-svg:hover{
     background-color: var(--hover-color);
     
 }
-.modal-open:focus {
+.modal-open:focus,
+.icon-svg:focus{
     background-color: var(--hover-color);
     color: var(--focus-color);
+    fill: var(--focus-color);
 }
+.list-button{
+    position: relative;
+}
+/*================стиль для кнопки модалки========*/
+.icon-svg{
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: 79%;
+        right: 35%;
+        fill: #444;
+}
+
 /*---------- tablet --------------*/
 @media screen and (min-width:768px) {
     .about {
@@ -307,6 +327,7 @@
      flex-direction: row;
  }
  .title-how{
+    font-family: 'Seymour One';
     margin-bottom: 80px;
  }
 
@@ -325,6 +346,7 @@
  }
 
  .list-button {
+    position: relative;
      display: flex;
      flex-direction: column;
      width: 330px;
@@ -349,7 +371,22 @@
      font-size: 14px;
      line-height: 1.28;
  }
+ .icon-svg {
+     width: 12px;
+     height: 12px;
+     position: absolute;
+     top: 83%;
+     right: 60%;
+     fill: #444;
+ }
+ .icon-svg:focus {
+     background-color: var(--hover-color);
+     color: var(--focus-color);
+     fill: var(--focus-color);
+ }
     
+/*============= DISCTOP============*/
+
 }
 @media screen and (min-width:1200px) {
     .about {
@@ -398,7 +435,20 @@
         display: flex;
         flex-direction: column;
         width: 463px;
-
+        position: relative;
+    }
+    .icon-svg {
+            width: 12px;
+            height: 12px;
+            position: absolute;
+            top: 70%;
+            right: 73%;
+            fill: #444;
+    }
+    .icon-svg:focus {
+        background-color: var(--hover-color);
+        color: var(--focus-color);
+        fill: white;
     }
     .modal-open {
             width: 164px;
@@ -409,7 +459,7 @@
             display: inline-block;
             text-decoration: none;
             background-color: var(--second-color);
-            margin-top: 54px;
+            margin-top: 60px;
             margin-bottom: 50px;
             margin-left: 0;
             color: #000000;
