@@ -1,9 +1,10 @@
 
 // Icecream
 
+
 .modal-ingredients {
     position: absolute;
-    top: 90%;
+    // top: 90%;
     // left: 50%;
     // transform: translate(-50%, -50%);
     max-width: 280px;
@@ -13,8 +14,8 @@
     border: 2px solid #F8D24E;
     border-radius: 10px;
 
-    // max-height: 100%;
-    // overflow-y: scroll;
+    max-height: 100%;
+    overflow-y: scroll;
 }
 
 
