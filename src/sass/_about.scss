@@ -205,7 +205,7 @@
 
 /* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
 
-.js-open-modal {
+.modal-open {
     width: 164px;
     height: 42px;
     padding-top: 12px;
@@ -220,4 +220,7 @@
     margin-right: auto;
     color: #000000;
     border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28;
 }
