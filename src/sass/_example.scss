@@ -1,28 +1,149 @@
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #2f2f37;
-  max-width: 960px;
-  padding: 16px;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
 
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #ff6b0a;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
+a {
+	text-decoration: none;
 }
 
-.example .background {
-  height: 240px;
-  // ❗️❗️❗️ The path to images from a SASS file
-  // is always the same as from the css folder.
-  background-image: url('../images/logo.png');
-  background-size: cover;
-  background-position: center;
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+:root {
+	--primal-color: #84a178;
+	--second-color: #f8d24e;
+	--hover-color: #0a8817;
+	--focus-color: #fcfcfc;
+	--disablet-color: #ababab;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+body {
+	font-family: "Monserate", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.container {
+	width: 100%;
+	max-width: 480px;
+	height: 100%;
+	background-color: var(--primal-color);
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: 768px;
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.container {
+		max-width: 1200px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+}
+
+.overlay {
+	/* Скрываем подложку  */
+	opacity: 0;
+	visibility: hidden;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 20;
+	transition: 0.3s all;
+}
+
+/* Стили для модальных окон */
+
+.modal {
+	/* Скрываем окна  */
+	opacity: 0;
+	visibility: hidden;
+
+	/*  Установаем ширину окна  */
+	width: 100%;
+	max-width: 500px;
+
+	/*  Центрируем и задаем z-index */
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 30; /* Должен быть выше чем у подложки*/
+
+	/*  Побочные стили   */
+	box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	padding: 30px;
+	border-radius: 3px;
+	background-color: #fff;
+	transition: 0.3s all;
+}
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* Стили для кнопки закрытия */
+.modal__cross {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	fill: #444;
+	cursor: pointer;
+}
+
+/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
+
+* {
+	cursor: url("/src/images/Cursor.svg"), default;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(50%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }

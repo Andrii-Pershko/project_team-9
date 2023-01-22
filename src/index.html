@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/_index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <!-- <include src="./partials/example.html"></include> -->
-    <p class="team">IT-Monsters 😈</p>
-    <include src="./partials/header.html"></include>
-    <main>
-      <include src="./partials/hero_header.html"></include>
-      <include src="./partials/products.html"></include>
-      <include src="./partials/about.html"></include>
-      <include src="./partials/advantages.html"></include>
-      <include src="./partials/customer_reviews.html"></include>
-      <include src="./partials/contact.html"></include>
-    </main>
-    <include src="./partials/footer.html"></include>
-    <include src="./partials/footer_modal_window.html"></include>
-    <include src="./partials/modal_window_products.html"></include>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Page title</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css" />
+		<link rel="stylesheet" href="./sass/_index.scss" />
+	</head>
+	<body>
+		<!-- ❗️❗️❗️ Add partials like so for every page -->
+		<!-- <include src="./partials/example.html"></include> -->
+		<include src="./partials/open_modal.html"></include>
+		<include src="./partials/header.html"></include>
+
+		<main>
+			<include src="./partials/hero.html"></include>
+			<include src="./partials/products.html"></include>
+			<include src="./partials/about.html"></include>
+			<include src="./partials/advantages.html"></include>
+			<include src="./partials/customer_reviews.html"></include>
+			<include src="./partials/contacts.html"></include>
+		</main>
+
+		<include src="./partials/footer.html"></include>
+
+		<include src="./partials/modal_buy_now.html"></include>
+		<include src="./partials/modal_contacts.html"></include>
+		<include src="./partials/modal_products.html"></include>
+		<include src="./partials/modal_overlay.html"></include>
+
+		<script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<script type="module" src="./index.js"></script>
+	</body>
 </html>
