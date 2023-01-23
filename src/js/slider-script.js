@@ -1,0 +1,11 @@
+$(document).ready(function(){
+    $('.slider-reviews').slick({
+        arrows:false,
+        dots:true,
+        adaptiveHeight:false,
+        adaptiveHeight:false,
+        speed:700,
+        easing:'ease-in-out',
+        touchThreshold:25,
+    });
+});
