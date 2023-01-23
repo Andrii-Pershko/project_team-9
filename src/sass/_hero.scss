@@ -15,9 +15,9 @@
 	background-repeat: no-repeat;
 }
 
-.title {
+.hero-title {
 	width: 247px;
-
+	text-align: left;
 	font-family: "Seymour One";
 	font-size: 26px;
 	line-height: 1.27;
@@ -177,8 +177,9 @@
 
 .many-ice-cream {
 	margin-top: 12px;
+
 	animation-name: spin;
-	animation-duration: 5s;
+	animation-duration: 10s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	animation-delay: 1000ms;
@@ -225,9 +226,6 @@
 		padding-bottom: 425px;
 	}
 
-	.title {
-		text-align: left;
-	}
 	.ice-cream {
 		padding-right: 60px;
 	}
@@ -262,7 +260,7 @@
 // ======================================== MOBILE ===========================================
 
 @media screen and (min-width: 480px) {
-	.title {
+	.hero-title {
 		margin-top: 0px;
 	}
 
@@ -283,7 +281,7 @@
 		padding-top: 14px;
 	}
 
-	.title {
+	.hero-title {
 		margin-top: 0;
 	}
 
@@ -307,7 +305,7 @@
 		padding-top: 14px;
 	}
 
-	.title {
+	.hero-title {
 		width: 367px;
 		font-size: 38px;
 		text-align: left;
