@@ -1,0 +1,346 @@
+
+// Icecream
+
+.modal-ingredients {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 280px;
+    /* height: 968px; */
+    padding: 28px 20px;
+    background-color: #FCFCFC;
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+
+    max-height: 100%;
+    overflow-y: auto
+}
+
+
+.title-modal-ingredients {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #131313;
+    text-align: center;
+    margin-bottom: 27px;
+    text-transform: uppercase;
+}
+
+.modal-icecream-img-thumb {
+    position: relative;
+    width: 132px;
+    height: 132px;
+    background-color: rgba(156, 190, 143, 0.7);
+    border-radius: 50%;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    margin: 0 auto;
+    
+}
+
+.modal-icecream-img {
+    position: absolute;
+    display: block;
+    // transform: translatey(-7px);
+    bottom: 7px;
+    border-radius: 50%;
+    
+
+}
+
+.modal-icecream-img:hover {
+transform: rotate(360deg);
+transition-property: transform;
+transition-duration: 500ms;
+}
+
+
+.modal-ingredients-list {
+    display: flex;
+    column-gap: 9px;
+    margin-top: 23px;
+}
+
+.modal-list-contane {
+    display: flex;
+    width: 53px;
+    height: 72px;
+    border: 2px solid #9CBE8F;
+    border-radius: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.modal-ingredients-text-contane {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    color: #131313;
+}
+
+.contane {
+    display: flex;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: #9CBE8F;
+    border: 2px solid #9CBE8F;
+    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+    align-items: center;
+    transition-property: transform;
+    transition-duration: 200ms;
+}
+
+.contane:hover  {
+transform: translatey(10px);
+transition-property: transform;
+transition-duration: 200ms;
+background-color: #EFD478;
+border: 2px solid #EFD478;
+}
+
+.modal-ingredients-text-amount {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 2.8;
+    color: #131313;
+}
+
+
+
+.modal-ingredients-title-product {
+    font-family: 'Montserrat', 'Roboto', 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #131313;
+    text-align: center;
+    margin-top: 40px;  
+}
+
+
+.modal-ingredients-list-product {
+margin-top: 24px;
+}
+
+.modal-ingredients-item-text {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    color: #131313;
+}
+
+.modal-ingredients-item:not(:last-child) {
+    margin-bottom: 11px;
+}
+
+.modal-ingredients-form {
+    margin-top: 40px;
+}
+
+
+.modal-ingredients-form-input {
+    position: relative;
+    background-color: rgba(248, 210, 78, 0.1);
+    outline: none;
+    width: 100%;
+    height: 42px;
+    border-radius: 10px;
+    border: 1px solid #84A178;
+    margin-bottom: 16px;
+    padding: 11px;
+   
+}
+
+.modal-ingredients-form-input::placeholder {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #131313;
+}
+
+
+.modal-ingredients-form-input-text {
+    display: block;
+    resize: none;
+    width: 100%;
+    height: 84px;
+    border: 1px solid #84A178;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgba(248, 210, 78, 0.1);
+    padding: 11px;
+    /* margin-bottom: 16px; */
+
+}
+
+
+.modal-ingredients-form-input-text::placeholder {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #131313;
+}
+
+
+.modal-ingredients-subscribe-button {
+    
+    margin-top: 24px;
+
+    display: flex;
+    margin: 24px auto 0;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: bacgraund-color;
+    color: #131313;
+    background-color:#F8D24E;;
+    width: 132px;
+    height: 42px;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    padding: 12px 34px;
+    cursor: pointer;
+}
+
+
+// Icecoffe
+
+.modal-icecoffee-img-thumb {
+    position: relative;
+    width: 132px;
+    height: 132px;
+    background-color: rgba(248, 210, 78, 0.7);
+    border-radius: 50%;
+    box-shadow:  0 5.26027px 19.726px #EFD478;
+    margin: 0 auto;
+    
+}
+
+.modal-icecoffee-img {
+    position: absolute;
+    display: block;
+    bottom: 7px;
+    border-radius: 50%;
+    
+
+}
+
+.modal-icecoffee-img:hover {
+    transform: rotate(360deg);
+    transition-property: transform;
+    transition-duration: 500ms;
+    }
+
+
+// milkshakes
+
+.modal-milkshakes-img-thumb {
+    position: relative;
+    width: 132px;
+    height: 132px;
+    background-color: #D6936D;
+    border-radius: 50%;
+    box-shadow:  0 5.26027px 19.726px #D6936D;
+    margin: 0 auto;
+    
+}
+
+.modal-milkshakes-img {
+    position: absolute;
+    display: block;
+    bottom: 7px;
+    border-radius: 50%;
+    
+
+}
+
+.modal-milkshakes-img:hover {
+    transform: rotate(360deg);
+    transition-property: transform;
+    transition-duration: 500ms;
+    }
+
+
+
+
+// Tablet, Desctop
+
+@media screen and (min-width: 480px) {
+    .modal-ingredients {
+    max-width: 568px;
+    padding: 32px 40px;
+}
+
+
+
+
+.modal-ingredients-list {
+    column-gap: 20px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.modal-list-contane {
+    width: 65px;
+    height: 90px;
+}
+
+.contane {
+width: 53px;
+height: 53px;
+    
+}
+
+.title-modal-ingredients {
+    margin-bottom: 31px;
+}
+
+.modal-ingredients-text-amount {
+    font-size: 12px;
+}
+
+.modal-ingredients-text-contane {
+    font-size: 12px;
+line-height: 1.25px;
+}
+
+.modal-ingredients-title-product {
+    margin-top: 48px;
+}
+
+    .modal-ingredients-form {
+        margin-top: 48px;
+    }
+
+
+    .modal-ingredients-subscribe-button {
+        width: 121px;
+        margin-top: 32px;
+    }
+
+
+}

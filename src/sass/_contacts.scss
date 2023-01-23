@@ -87,6 +87,10 @@ a {
     color: #d6936d;
     line-height: 183%;
 }
+.link-address:focus,
+.link-address:hover {
+    text-decoration: underline;
+}
 
 .link-address::after {
     content: "";
@@ -127,6 +131,9 @@ a {
 }
 
 .button-locations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 196px;
     height: 42px;
     font-weight: 600;
@@ -146,6 +153,7 @@ a {
 
 .button-locations:focus {
     color: #ffffff;
+    
     background-color: #0a8817;
 }
 
@@ -155,6 +163,9 @@ a {
 }
 
 .button-franchise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 196px;
     height: 42px;
     font-weight: 600;
@@ -182,6 +193,15 @@ a {
     color: #000000;
     border: 2px solid #111111;
 }
+
+.button-icon {
+    width: 12px;
+    height: 12px;
+    fill: currentColor;
+}
+
+
+
 
 @media screen and (max-width: 767px) {
     .content-button {
