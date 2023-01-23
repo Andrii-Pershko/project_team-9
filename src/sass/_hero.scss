@@ -54,24 +54,53 @@
 	font-family: inherit;
 	align-items: center;
 	transition: border-color var(--transition-dur-func);
-	animation: animate125 3000ms infinite 1000ms;
+	overflow: hidden;
+	animation: animate105 3000ms infinite 1000ms;
+}
+
+@keyframes animate105 {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.05);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }
 
 .products-btn:hover,
 .products-btn:focus {
 	border-color: var(--hover-color);
-	@keyframes animate125 {
-		0% {
-			transform: scale(1);
-		}
+}
 
-		50% {
-			transform: scale(1.05);
-		}
+.products-btn::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1em;
+	height: 100%;
+	text-decoration: none;
 
-		100% {
-			transform: scale(1);
-		}
+	background-color: rgba(#f8d24e, 0.05);
+	transform: skewX(-45deg);
+	animation: shine 2000ms infinite;
+}
+
+.products-btn:hover::before {
+	background-color: rgba(#0a8817, 0.05);
+}
+
+@keyframes shine {
+	from {
+		transform: skewX(-45deg);
+	}
+	to {
+		transform: translateX(10em) skewX(-45deg);
 	}
 }
 
@@ -100,6 +129,10 @@
 
 .made-link:focus {
 	color: var(--focus-color);
+}
+
+.made-link:disabled {
+	color: var(--disablet-color);
 }
 
 .quantity {
@@ -144,6 +177,21 @@
 
 .many-ice-cream {
 	margin-top: 12px;
+	animation-name: spin;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-delay: 1000ms;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 .ice-text-arrow {
@@ -272,6 +320,14 @@
 
 	.products-btn {
 		padding: 12px 34px;
+	}
+
+	.products-btn:focus {
+		color: var(--focus-color);
+	}
+
+	.products-btn:disabled {
+		border-color: var(disablet-color);
 	}
 
 	.made-link {
