@@ -1,0 +1,370 @@
+:root {
+	--transition-dur-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// img {
+// 	display: block;
+// 	width: 100%;
+// 	height: auto;
+// }
+
+.hero {
+	position: relative;
+
+	background-color: var(--primal-color);
+	background-repeat: no-repeat;
+}
+
+.hero-title {
+	width: 247px;
+	text-align: left;
+	font-family: "Seymour One";
+	font-size: 26px;
+	line-height: 1.27;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: var(--focus-color);
+}
+
+.text {
+	width: 139px;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 140%;
+	color: var(--focus-color);
+}
+
+.passion {
+	font-size: 34px;
+}
+
+.products-btn {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.29;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #131313;
+	border: 2px solid var(--second-color);
+	border-radius: 8px;
+	background-color: transparent;
+	justify-content: center;
+	padding: 11px 26px;
+	font-family: inherit;
+	align-items: center;
+	transition: border-color var(--transition-dur-func);
+	overflow: hidden;
+	animation: animate105 3000ms infinite 1000ms;
+}
+
+@keyframes animate105 {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.05);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.products-btn:hover,
+.products-btn:focus {
+	border-color: var(--hover-color);
+}
+
+.products-btn::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1em;
+	height: 100%;
+	text-decoration: none;
+
+	background-color: rgba(#f8d24e, 0.05);
+	transform: skewX(-45deg);
+	animation: shine 2000ms infinite;
+}
+
+.products-btn:hover::before {
+	background-color: rgba(#0a8817, 0.05);
+}
+
+@keyframes shine {
+	from {
+		transform: skewX(-45deg);
+	}
+	to {
+		transform: translateX(10em) skewX(-45deg);
+	}
+}
+
+.btn-link {
+	display: flex;
+	margin-top: 32px;
+	align-items: center;
+}
+
+.made-link {
+	margin-left: 12px;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.25;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	text-decoration-line: underline;
+	color: #f8d24e;
+	transition: color var(--transition-dur-func);
+}
+
+.made-link:hover {
+	color: var(--hover-color);
+}
+
+.made-link:focus {
+	color: var(--focus-color);
+}
+
+.made-link:disabled {
+	color: var(--disablet-color);
+}
+
+.quantity {
+	position: absolute;
+	margin-top: 94px;
+	margin-right: 32px;
+	min-width: 32px;
+	top: 0;
+	right: 0;
+
+	font-weight: 400;
+	font-size: 8px;
+	line-height: 1.25;
+	text-align: right;
+	color: #fcfcfc;
+}
+
+.number {
+	font-weight: 900;
+	font-size: 28px;
+	line-height: 1.21;
+	text-align: right;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #131313;
+}
+
+.cafes {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	min-width: 32px;
+}
+
+.trucks {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	min-width: 46px;
+	margin-top: 20px;
+}
+
+.many-ice-cream {
+	margin-top: 12px;
+
+	animation-name: spin;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-delay: 1000ms;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.ice-text-arrow {
+	display: flex;
+	align-items: center;
+}
+
+.text-arrow {
+	margin-left: 32px;
+}
+
+.arrow {
+	margin-top: 12px;
+	fill: var(--focus-color);
+}
+
+.ice-cream {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	animation: zoomIn;
+	animation-duration: 1s;
+}
+
+// ================================================== 320-479 =======================================
+
+@media screen and (max-width: 479px) {
+	.hero {
+		height: 502px;
+		padding-top: 50px;
+		padding-bottom: 425px;
+	}
+
+	.ice-cream {
+		padding-right: 60px;
+	}
+}
+
+// ===================================================================================================
+
+@media screen and (max-width: 767px) {
+	.hero {
+		background-image: url(../images/img/hero/modile/dotts.png);
+		background-position: right 0 bottom 0;
+		height: 415px;
+	}
+
+	.quantity {
+		display: none;
+	}
+
+	.text {
+		display: none;
+	}
+
+	.arrow {
+		display: none;
+	}
+
+	.many-ice-cream {
+		display: none;
+	}
+}
+
+// ======================================== MOBILE ===========================================
+
+@media screen and (min-width: 480px) {
+	.hero-title {
+		margin-top: 0px;
+	}
+
+	.ice-cream {
+		width: 218px;
+	}
+	.hero {
+		padding-top: 40px;
+	}
+}
+
+// ========================================= TABLET ==========================================
+
+@media screen and (min-width: 768px) {
+	.hero {
+		background-image: url(../images/img/hero/tablet/dotts.png);
+		background-position: right 0 bottom 0;
+		padding-top: 14px;
+	}
+
+	.hero-title {
+		margin-top: 0;
+	}
+
+	.ice-cream {
+		padding-right: 92px;
+		width: 268px;
+	}
+	.quantity {
+		margin-top: 28px;
+	}
+	.number {
+		font-weight: 800;
+	}
+}
+
+// ============================================ DESKTOP =======================================
+
+@media screen and (min-width: 1200px) {
+	.hero {
+		background-image: url(../images/img/hero/desktop/dotts.png);
+		padding-top: 14px;
+	}
+
+	.hero-title {
+		width: 367px;
+		font-size: 38px;
+		text-align: left;
+		margin-top: 38px;
+	}
+
+	.passion {
+		font-size: 38px;
+	}
+
+	.products-btn {
+		padding: 12px 34px;
+	}
+
+	.products-btn:focus {
+		color: var(--focus-color);
+	}
+
+	.products-btn:disabled {
+		border-color: var(disablet-color);
+	}
+
+	.made-link {
+		font-size: 14px;
+		line-height: 1.21;
+	}
+	.text {
+		width: 200px;
+		height: 80px;
+		font-size: 14px;
+	}
+
+	.ice-cream {
+		width: 456px;
+		padding-right: 92px;
+	}
+
+	.many-ice-cream {
+		margin-top: 42px;
+		margin-bottom: 65px;
+	}
+
+	.text-arrow {
+		margin-left: 16px;
+	}
+
+	.number {
+		font-size: 46px;
+		line-height: 1.22;
+	}
+
+	.cafes,
+	.trucks {
+		font-size: 14px;
+		line-height: 1.21;
+	}
+
+	.quantity {
+		margin-right: 16px;
+		margin-top: 50px;
+	}
+}

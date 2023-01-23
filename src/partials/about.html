@@ -2,37 +2,48 @@
 	<div class="container about">
 		<p class="title-tradition">TRADITION AND LOVE</p>
 		<h1 class="title-how">HOW IT`S MADE?</h1>
-		<img
-			class="foto"
-			src="/src/images/img/about/desktop/cow.png"
-			alt="Picture of cow grazing in a meadow"
-			width="280"
-			height="300"
-		/>
-		<ul class="about-list">
-			<li class="about-item">
-				<p class="subtitle">
-					Ice is a place where you will become not only a little happier, but also healthier. Health is the main value
-					for us, and we follow it when creating our handmade desserts.
-				</p>
-			</li>
-			<li class="about-item">
-				<p class="subtitle">
-					We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to
-					children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and
-					23 milkshakes.
-				</p>
-			</li>
-			<li class="about-item">
-				<p class="subtitle">This is enough to choose ice cream and coffee for any mood!</p>
-			</li>
-		</ul>
+		<div class="text-about">
+			<div class="foto-about">
+				<img
+					class="cow"
+					srcset="/src/images/img/about/desktop/cow.png 1x, /src/images/img/about/desktop/cow.2x.png 2x"
+					src="/src/images/img/about/desktop/cow.png"
+					alt="Picture of cow grazing in a meadow"
+					width="280"
+					height="280"
+				/>
+			</div>
+			<div class="list-button">
+				<ul class="about-list">
+					<li class="about-item">
+						<p class="subtitle">
+							Ice is a place where you will become not only a little happier, but also healthier. Health is the main
+							value for us, and we follow it when creating our handmade desserts.
+						</p>
+					</li>
+					<li class="about-item">
+						<p class="subtitle">
+							We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be
+							given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of
+							coffee and 23 milkshakes.
+						</p>
+					</li>
+					<li class="about-item">
+						<p class="subtitle">This is enough to choose ice cream and coffee for any mood!</p>
+					</li>
+				</ul>
 
-		<a href="#" class="js-open-modal" data-modal="1">Read more</a>
-
+				<a href="#" class="js-open-modal modal-open" data-modal="4">Read more</a>
+				<svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+					<path
+						d="M10.586 3.272a2 2 0 0 0 0 2.828l9.9 9.9-9.9 9.9a1.998 1.998 0 0 0 .025 2.804 2.001 2.001 0 0 0 2.804.025l11.314-11.314a2         2 0 0 0 0-2.828L13.415 3.273a2 2 0 0 0-2.828 0z"
+					/>
+				</svg>
+			</div>
+		</div>
 		<!-- Несколько модальных окон -->
 
-		<div class="modal" data-modal="1">
+		<div class="modal wind-modal" data-modal="4">
 			<h3 class="modal-p">How it’s made?</h3>
 			<iframe
 				class="iframe-video"
@@ -44,7 +55,7 @@
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 				allowfullscreen
 			></iframe>
-			<p>
+			<p class="title-video">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem
 				ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
 			</p>
