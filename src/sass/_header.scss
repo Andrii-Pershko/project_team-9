@@ -1,287 +1,283 @@
 .general {
-  margin-top: 12px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--primal-color);
+	margin-top: 12px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--primal-color);
 }
 
 .logo-img {
-  width: 40px;
-  height: 37px;
+	width: 40px;
+	height: 37px;
 }
 
 .navigation {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 }
 
 /* ================ MOBIL MENU ==================== */
 /* кнопка відкриття мобільного меню */
 
 .mobil-menu-open {
-  background-color: transparent;
-  border: none;
-  padding: 0;
+	background-color: transparent;
+	border: none;
+	padding: 0;
 }
 
 .mobil-menu-open-icon {
-  width: 32px;
-  height: 32px;
+	width: 32px;
+	height: 32px;
 }
 
 .mobil-menu-open-icon:hover,
 .mobil-menu-open-icon:focus .mobile-menu__icon-close {
-  fill: var(--hover-color);
-  cursor: pointer;
+	fill: var(--hover-color);
+	cursor: pointer;
 }
 
 /*  */
 .menu-container {
-  margin-top: 12px;
-  height: 568px;
-  background-color: var(--primal-color);
-
+	margin-top: 12px;
+	height: 568px;
+	background-color: var(--primal-color);
 }
 
 .menu-logo-btn {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .menu-logo {
-  width: 40px;
-  height: 37px;
+	width: 40px;
+	height: 37px;
 }
 
 .mobile-logo {
-  top: 10px;
-  left: 20px;
+	top: 10px;
+	left: 20px;
 }
 
 .mobile-menu {
-  position: fixed;
-  top: 0;
-  right: -100%;
-  background-color: transparent;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  transition: right 1000ms ease;
+	position: fixed;
+	top: 0;
+	right: -100%;
+	background-color: transparent;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	transition: right 1000ms ease;
 }
 
 .mobile-menu.is-open {
-  pointer-events: auto;
-  right: 0;
+	pointer-events: auto;
+	right: 0;
 }
 
 .mobile-nav {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .mobile-menu-item {
-  text-align: center;
-  margin-top: 32px;
+	text-align: center;
+	margin-top: 32px;
 }
 
 .mobile-menu-link {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 1.22;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 1.22;
 
-  color: var(--focus-color);
+	color: var(--focus-color);
 }
 
 .mobile-menu-link:hover {
-  color: #131313;
+	color: #131313;
 }
 
 .mobile-menu-link:focus {
-  color: var(--focus-color);
+	color: var(--focus-color);
 }
 
 .mobile-modal-btn {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 110px;
-  margin-bottom: 64px;
-  margin-left: auto;
-  margin-right: auto;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 110px;
+	margin-bottom: 64px;
+	margin-left: auto;
+	margin-right: auto;
 
-  color: #000000;
+	color: #000000;
 
-  width: 152px;
-  height: 42px;
-  cursor: pointer;
-  background: var(--second-color);
-  border-radius: 10px;
-  border-color: transparent;
+	width: 152px;
+	height: 42px;
+	cursor: pointer;
+	background: var(--second-color);
+	border-radius: 10px;
+	border-color: transparent;
 }
 
 .mobile-modal-btn:hover {
-  background-color: var(--hover-color);
+	background-color: var(--hover-color);
 }
 
 .mobile-modal-btn:focus {
-  background-color: var(--hover-color);
-  color: var(--focus-color);
-  fill: var(--focus-color);
+	background-color: var(--hover-color);
+	color: var(--focus-color);
+	fill: var(--focus-color);
 }
 
-
-
 .mobile-close-btn {
-  width: 32px;
-  height: 32px;
-  fill: var(--focus-color);
-  cursor: pointer;
-  background: var(--color-accent);
-  border-color: transparent;
+	width: 32px;
+	height: 32px;
+	fill: var(--focus-color);
+	cursor: pointer;
+	background: var(--color-accent);
+	border-color: transparent;
 }
 
 .mobile-close-btn:hover,
 .mobile-close-btn:focus {
-  fill: var(--second-color);
+	fill: var(--second-color);
 }
-
 
 /* ==================================================== */
 /* Кнопка модального вікна */
 .modal-btn {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 32px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 32px;
 
-  color: #000000;
+	color: #000000;
 
-  width: 152px;
-  height: 42px;
-  cursor: pointer;
-  background: var(--second-color);
-  border-radius: 10px;
-  border-color: transparent;
+	width: 152px;
+	height: 42px;
+	cursor: pointer;
+	background: var(--second-color);
+	border-radius: 10px;
+	border-color: transparent;
 }
 
 .modal-btn-arrow {
-  width: 12px;
-  height: 12px;
-  margin-left: 4px;
+	width: 12px;
+	height: 12px;
+	margin-left: 4px;
 }
 
 .modal-btn:hover {
-  background-color: var(--hover-color);
+	background-color: var(--hover-color);
 }
 
 .modal-btn:focus {
-  background-color: var(--hover-color);
-  color: var(--focus-color);
-  fill: var(--focus-color);
-  border: none;
+	background-color: var(--hover-color);
+	color: var(--focus-color);
+	fill: var(--focus-color);
+	border: none;
 }
 
 /* ======================================= 480 ===================================== */
 @media screen and (max-width: 767px) {
-  .modal-btn {
-    display: none;
-  }
+	.modal-btn {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 1199px) {
-  .menu-general {
-    display: none;
-  }
+	.menu-general {
+		display: none;
+	}
 }
 
 /* ====================================== mobil ==================================== */
 @media screen and (min-width: 480px) {
-
-  .menu-container {
-    margin-top: 20px;
-    height: 1024px;
-  }
+	.menu-container {
+		margin-top: 20px;
+		height: 1024px;
+	}
 }
 
 /* ======================================= Tablet ================================== */
 @media screen and (min-width: 768px) {
-  .general {
-    margin-top: 20px;
-  }
+	.header-button {
+		display: none;
+	}
+	.general {
+		margin-top: 20px;
+	}
 
-  .mobile-modal-btn {
-    display: none;
-  }
+	.mobile-modal-btn {
+		display: none;
+	}
 
-  .logo-img,
-  .menu-logo {
-    width: 48px;
-    height: 44px;
-  }
+	.logo-img,
+	.menu-logo {
+		width: 48px;
+		height: 44px;
+	}
 
-  .mobile-menu-link {
-    font-size: 48px;
-  }
-
+	.mobile-menu-link {
+		font-size: 48px;
+	}
 }
 
 /* ======================================= Desctop ================================= */
 @media screen and (min-width: 1200px) {
+	.header-button {
+		display: block;
+	}
 
-  .container {
-    width: 1200px;
-  }
+	.general {
+		margin-top: 8px;
+	}
 
-  .general {
-    margin-top: 8px;
-  }
+	.logo-img {
+		width: 60px;
+		height: 65px;
+	}
 
-  .logo-img {
-    width: 60px;
-    height: 65px;
-  }
+	.mobil-menu-open {
+		display: none;
+	}
 
-  .mobil-menu-open {
-    display: none;
-  }
+	.menu-general {
+		display: flex;
+		margin: 0 auto;
+	}
 
-  .menu-general {
-    display: flex;
-    margin: 0 auto;
-  }
+	.menu-item {
+		margin-right: 28px;
+	}
 
-  .menu-item {
-    margin-right: 28px;
-  }
+	.menu-link {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1.25;
+		display: flex;
+		align-items: center;
+		color: var(--focus-color);
+	}
 
-  .menu-link {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    display: flex;
-    align-items: center;
-    color: var(--focus-color);
-  }
+	.menu-link:hover {
+		color: var(--second-color);
+	}
 
-  .menu-link:hover {
-    color: var(--second-color);
-  }
+	.menu-link:focus {
+		color: var(--focus-color);
+	}
 
-  .menu-link:focus {
-    color: var(--focus-color);
-  }
-
-  .mobile-menu {
-    display: none;
-  }
+	.mobile-menu {
+		display: none;
+	}
 }
