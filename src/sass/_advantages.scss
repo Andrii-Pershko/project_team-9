@@ -1,9 +1,5 @@
 /* Section "Advantages" */
 
-p {
-	margin: 0px;
-}
-
 .advantages {
 	justify-content: center;
 	background-color: var(--primal-color);
@@ -112,6 +108,7 @@ p {
 }
 
 .advantages-item-text {
+	margin: 0px;
 	font-weight: 400;
 	line-height: 1.76;
 	color: var(--focus-color);
