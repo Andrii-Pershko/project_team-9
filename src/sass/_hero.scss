@@ -17,7 +17,7 @@
 
 .title {
 	width: 247px;
-	margin-top: 50px;
+
 	font-family: "Seymour One";
 	font-size: 26px;
 	line-height: 1.27;
@@ -173,8 +173,13 @@
 @media screen and (max-width: 479px) {
 	.hero {
 		height: 502px;
+		padding-top: 50px;
+		padding-bottom: 425px;
 	}
 
+	.title {
+		text-align: left;
+	}
 	.ice-cream {
 		padding-right: 60px;
 	}
@@ -210,11 +215,14 @@
 
 @media screen and (min-width: 480px) {
 	.title {
-		margin-top: 40px;
+		margin-top: 0px;
 	}
 
 	.ice-cream {
 		width: 218px;
+	}
+	.hero {
+		padding-top: 40px;
 	}
 }
 
@@ -224,15 +232,22 @@
 	.hero {
 		background-image: url(../images/img/hero/tablet/dotts.png);
 		background-position: right 0 bottom 0;
+		padding-top: 14px;
 	}
 
 	.title {
-		margin-top: 14px;
+		margin-top: 0;
 	}
 
 	.ice-cream {
 		padding-right: 92px;
 		width: 268px;
+	}
+	.quantity {
+		margin-top: 28px;
+	}
+	.number {
+		font-weight: 800;
 	}
 }
 
@@ -241,11 +256,14 @@
 @media screen and (min-width: 1200px) {
 	.hero {
 		background-image: url(../images/img/hero/desktop/dotts.png);
+		padding-top: 14px;
 	}
 
 	.title {
 		width: 367px;
 		font-size: 38px;
+		text-align: left;
+		margin-top: 38px;
 	}
 
 	.passion {
@@ -273,6 +291,7 @@
 
 	.many-ice-cream {
 		margin-top: 42px;
+		margin-bottom: 65px;
 	}
 
 	.text-arrow {
@@ -292,5 +311,6 @@
 
 	.quantity {
 		margin-right: 16px;
+		margin-top: 50px;
 	}
 }
