@@ -19,3 +19,43 @@
 	font-size: 20px;
 	line-height: 28px;
 }
+
+///modal-franshise///
+.modal-franshise {
+	width: 570px;
+	padding: 32px 60px;
+}
+.modal-fran-text {
+	text-align: left;
+	margin-bottom: 32px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	/* or 22px */
+
+	color: #131313;
+}
+
+.franchise-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.franchise-input {
+	width: 368px;
+	height: 42px;
+	align-self: center;
+	background: rgba(248, 210, 78, 0.1);
+	border: 1px solid #84a178;
+	border-radius: 10px;
+	padding: 11px 16px;
+}
+textarea {
+	resize: none;
+}
+.add {
+	height: 84px;
+}
+.franchise-lable:not(:last-child) {
+	margin-bottom: 16px;
+}
