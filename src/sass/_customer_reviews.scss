@@ -44,6 +44,124 @@ img {
 
 /* GALLERY */
 
+@keyframes fadeIm-1 {
+	from {
+		opacity: 1;
+	}
+
+	33.33% {
+		opacity: 0;
+	}
+
+	66.66% {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes fadeIm-2 {
+	from {
+		opacity: 0;
+	}
+
+	33.33% {
+		opacity: 1;
+	}
+
+	66.66% {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes fadeIm-3 {
+	from {
+		opacity: 0;
+	}
+
+	33.33% {
+		opacity: 0;
+	}
+
+	66.66% {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes fadeIm-4 {
+	from {
+		opacity: 0;
+	}
+
+	33.33% {
+		opacity: 0;
+	}
+
+	66.66% {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.div-style {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 100%;
+	max-width: 440px;
+	height: 182px;
+
+}
+
+.im-1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation-name: fadeIm-1;
+	animation-duration: 9s;
+	animation-iteration-count: infinite;
+}
+
+.im-2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation-name: fadeIm-2;
+	animation-duration: 9s;
+	animation-iteration-count: infinite;
+}
+
+.im-3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation-name: fadeIm-3;
+	animation-duration: 9s;
+	animation-iteration-count: infinite;
+}
+
+.im-4 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation-name: fadeIm-4;
+	animation-duration: 9s;
+	animation-iteration-count: infinite;
+}
+
 .item-gallery {
 	border-radius: 24px;
 }
@@ -165,6 +283,10 @@ img {
 	.container {
 		width: 768px;
 	}
+	.div-style {
+		max-width: 704px;
+		height: 293px
+	}
 	.gallery {
 		margin-bottom: 100px;
 	}
@@ -218,6 +340,10 @@ img {
 	}
 	.container {
 		width: 1200px;
+	}
+	.div-style {
+		max-width: 1013px;
+		height: 422px
 	}
 
 	.gallery {

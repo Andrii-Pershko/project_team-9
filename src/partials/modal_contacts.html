@@ -6,7 +6,7 @@
 			d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
 		/>
 	</svg>
-	<h3 class="title-modal-location">Our Locations</h3>
+	<p class="title-modal-location">Our Locations</p>
 	<iframe
 		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30084.140051660488!2d30.86488930874997!3d50.37209872382712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4e921bcfc6a29%3A0x3f109a827fb74de0!2z0JzQsNC50YHRgtC10YDQvdGPINCc0L7RgNC-0LfQuNCy0LAgRG9sY2UgSXRhbGlh!5e0!3m2!1sru!2sua!4v1674462981789!5m2!1sru!2sua"
 		width="448"
@@ -19,32 +19,43 @@
 	<a
 		target="blank"
 		href="https://www.google.com/maps/place/%D0%9C%D0%B0%D0%B9%D1%81%D1%82%D0%B5%D1%80%D0%BD%D1%8F+%D0%9C%D0%BE%D1%80%D0%BE%D0%B7%D0%B8%D0%B2%D0%B0+Dolce+Italia/@50.3720987,30.8648893,13.44z/data=!4m9!1m2!2m1!1z0LzQsNCz0LDQt9C40L0g0LzQvtGA0L7Qt9C40LLQsA!3m5!1s0x40d4e921bcfc6a29:0x3f109a827fb74de0!8m2!3d50.3638878!4d30.921182!15sCh_QvNCw0LPQsNC30LjQvSDQvNC-0YDQvtC30LjQstCwWiEiH9C80LDQs9Cw0LfQuNC9INC80L7RgNC-0LfQuNCy0LCSAQ5pY2VfY3JlYW1fc2hvcOABAA"
-		class="header-button"
+		class="header-button button-open-map"
 	>
-		<button class="modal-btn open-map-btn" type="button">
-			Open Map
-			<svg class="modal-btn-arrow">
-				<use href="/src/images/img/svg/sprite.svg#icon-arrow"></use>
-			</svg>
-		</button>
+		<button class="modal-btn margin-right" type="button">Open Map</button>
 	</a>
 </div>
 
-<div class="modal" data-modal="8">
+<div class="modal our-location-modal modal-franshise" data-modal="7">
 	<!--   Svg иконка для закрытия окна  -->
 	<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 		<path
 			d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
 		/>
 	</svg>
-</div>
-
-<div class="modal" data-modal="7">
-	<!--   Svg иконка для закрытия окна  -->
-	<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-		<path
-			d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-		/>
-	</svg>
-	<p class="modal__title">Заголовок окна 3 Contacts</p>
+	<p class="modal__title title-modal-location">Thank you for your interest in owning an Ice Cream shop</p>
+	<p class="modal-fran-text">
+		Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time.
+		Once the application process resumes, we will contact you for further information. Please fill out the contact
+		information below and we will reach out for additional information. We appreciate your patience.
+	</p>
+	<form class="franchise-form" name="take-franchise" autocomplete="on">
+		<label class="franchise-lable">
+			<input class="franchise-input" type="text" name="username" placeholder="Name" required autofocus />
+		</label>
+		<label class="franchise-lable">
+			<input
+				class="franchise-input"
+				type="tel"
+				name="tel"
+				placeholder="Phone"
+				pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?"
+				required
+			/>
+		</label>
+		<label class="franchise-lable">
+			<input class="franchise-input" type="email" name="email" placeholder="Email" required />
+		</label>
+		<textarea class="franchise-input add" name="feedback" rows="4" placeholder="Comment"></textarea>
+		<button class="modal-btn open-map-btn submit-btn" type="submit">Submit</button>
+	</form>
 </div>
