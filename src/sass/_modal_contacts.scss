@@ -7,7 +7,6 @@
 
 .open-map-btn {
 	margin: auto;
-	margin-top: 32px;
 	display: block;
 }
 
@@ -58,4 +57,19 @@ textarea {
 }
 .franchise-lable:not(:last-child) {
 	margin-bottom: 16px;
+}
+
+.header-button {
+	display: inline-block;
+}
+
+.button-open-map {
+	margin-top: 32px;
+}
+.margin-right {
+	margin-left: 0;
+}
+
+.submit-btn {
+	margin-top: 32px;
 }
