@@ -1,11 +1,75 @@
 <!-- Успіху всім нам в написанні цього проекту! Тільки вперед IT-Monsters 😈  -->
 
-<div class="modal" data-modal="1">
+<div class="modal buy_now" data-modal="1">
 	<!--   Svg иконка для закрытия окна  -->
 	<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 		<path
 			d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
 		/>
 	</svg>
-	<p class="modal__title">Заголовок окна BUY</p>
+	<div class="buy_now-wrap">
+		<h2 class="buy_now-title">Buy now</h2>
+		<form class="buy_now-list">
+			<div class="buy_now-list_wrap">
+				<label class="buy_now-item" for="ice_cream">
+					<input type="checkbox" id="ice_cream" name="radios" value="ice cream" />
+					<div class="item_wrap item_wrap-green">
+						<div class="item_wrap-bg">
+							<img
+								srcset="images/img/buy-now_modal/ice.cream.png 1x, images/img/buy-now_modal/ice.cream@2x.png 2x"
+								src="images/img/buy-now_modal/ice.cream.png"
+								alt="ice cream"
+							/>
+						</div>
+						<p class="item_wrap-text">ice cream</p>
+					</div>
+				</label>
+				<label class="buy_now-item" for="ice_coffee">
+					<input type="checkbox" id="ice_coffee" name="radios" value="ice coffee" />
+					<div class="item_wrap item_wrap-yellow">
+						<div class="item_wrap-bg">
+							<img
+								srcset="images/img/buy-now_modal/ice.coffee.png 1x, images/img/buy-now_modal/ice.coffee@2x.png 2x"
+								src="images/img/buy-now_modal/ice.coffee.png"
+								alt="ice coffee"
+							/>
+						</div>
+						<p class="item_wrap-text">ice coffee</p>
+					</div>
+				</label>
+				<label class="buy_now-item" for="milkshake">
+					<input type="checkbox" id="milkshake" name="radios" value="milkshake" />
+					<div class="item_wrap item_wrap-orange">
+						<div class="item_wrap-bg">
+							<img
+								srcset="images/img/buy-now_modal/milkshake.png 1x, images/img/buy-now_modal/milkshake@2x.png 2x"
+								src="images/img/buy-now_modal/milkshake.png"
+								alt="milkshake"
+							/>
+						</div>
+						<p class="item_wrap-text">milkshake</p>
+					</div>
+				</label>
+			</div>
+
+			<div class="buy_now-form">
+				<label class="buy_now-lable">
+					<input class="buy_now-input" type="text" name="user_name" required placeholder="Name" />
+				</label>
+				<label class="buy_now-lable">
+					<input
+						class="buy_now-input"
+						type="tel"
+						name="user_tel"
+						minlength="9"
+						maxlength="15"
+						required
+						placeholder="Phone"
+					/>
+				</label>
+				<textarea class="buy_now-textarea" name="user_message" placeholder="Comment"></textarea>
+			</div>
+			<button class="buy_now-button" type="submit">Submit</button>
+		</form>
+	</div>
 </div>
