@@ -1,5 +1,4 @@
 .general {
-	margin-top: 12px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -12,6 +11,7 @@
 }
 
 .navigation {
+	padding-top: 12px;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -28,21 +28,21 @@
 }
 
 .mobil-menu-open-icon {
-	width: 32px;
-	height: 32px;
+  width: 32px;
+  height: 32px;
+  fill: var(--primal-color);
 }
 
 .mobil-menu-open-icon:hover,
 .mobil-menu-open-icon:focus .mobile-menu__icon-close {
-	fill: var(--hover-color);
-	cursor: pointer;
+  fill: var(--focus-color);
+  cursor: pointer;
 }
+/* /--------------------------------------------------- */
+// ================= Mobil window ======================
 
-/*  */
 .menu-container {
-	margin-top: 12px;
-	height: 568px;
-	background-color: var(--primal-color);
+  background-color: var(--primal-color);
 }
 
 .menu-logo-btn {
@@ -136,18 +136,24 @@
 }
 
 .mobile-close-btn {
-	width: 32px;
-	height: 32px;
-	fill: var(--focus-color);
-	cursor: pointer;
-	background: var(--color-accent);
-	border-color: transparent;
+  fill: var(--second-color);
+  cursor: pointer;
+  border-color: transparent;
+  background-color: var(--primal-color);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  padding-top: 5px;
 }
 
-.mobile-close-btn:hover,
-.mobile-close-btn:focus {
-	fill: var(--second-color);
+.mobile-close-btn:hover {
+  fill: var(--hover-color);
 }
+
+.mobile-close-btn:focus {
+  fill: var(--focus-color);
+}
+
 
 /* ==================================================== */
 /* Кнопка модального вікна */
@@ -187,7 +193,7 @@
 	border: none;
 }
 
-/* ======================================= 480 ===================================== */
+/* ======================================= max ===================================== */
 @media screen and (max-width: 767px) {
 	.modal-btn {
 		display: none;
@@ -200,19 +206,16 @@
 	}
 }
 
-/* ====================================== mobil ==================================== */
-@media screen and (min-width: 480px) {
-	.menu-container {
-		margin-top: 20px;
-		height: 1024px;
-	}
-}
-
 /* ======================================= Tablet ================================== */
 @media screen and (min-width: 768px) {
-	.general {
-		margin-top: 20px;
+
+	.header-button {
+		display: none;
 	}
+		.navigation {
+			padding-top: 20px;
+		}
+
 
 	.mobile-modal-btn {
 		display: none;
@@ -234,10 +237,6 @@
 	.header-button {
 		display: block;
 		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-	}
-
-	.general {
-		margin-top: 8px;
 	}
 
 	.logo-img {
@@ -267,9 +266,14 @@
 		color: var(--focus-color);
 	}
 
-	.menu-link:hover {
-		color: var(--second-color);
-	}
+  .menu-link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    color: var(--focus-color);
+  }
 
 	.menu-link:focus {
 		color: var(--focus-color);
