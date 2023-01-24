@@ -36,7 +36,6 @@
 
 ///modal-franshise///
 .modal-franshise {
-	overflow-y: scroll;
 	width: 282px;
 	padding: 28px 28px;
 }
@@ -70,7 +69,7 @@ textarea {
 	border: 0;
 }
 .add {
-	height: 84px;
+	height: 64px;
 }
 .franchise-lable:not(:last-child) {
 	margin-bottom: 16px;
@@ -101,5 +100,8 @@ textarea {
 	.franchise-input {
 		width: 368px;
 		height: 42px;
+	}
+	.add {
+		height: 84px;
 	}
 }
