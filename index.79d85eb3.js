@@ -1,0 +1,2 @@
+!function(){function e(e){return e&&e.__esModule?e.default:e}var t={};Object.defineProperty(t,"__esModule",{value:!0}),t.default=function(e,t,r){t in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r;return e},$(document).ready((function(){var r;$(".slider-reviews").slick((r={arrows:!1,dots:!0,adaptiveHeight:!1},e(t)(r,"adaptiveHeight",!1),e(t)(r,"speed",700),e(t)(r,"easing","ease-in-out"),e(t)(r,"touchThreshold",25),r))}))}();
+//# sourceMappingURL=index.79d85eb3.js.map
