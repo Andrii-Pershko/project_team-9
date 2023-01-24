@@ -6,11 +6,14 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
-		padding: 0px auto;
+		padding-top: 60px;
 		margin-left: 0;
 		margin-right: 0;
 	}
-
+	.container.products {
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.laba {
 		font-family: Montserrat;
 		font-size: 18px;
@@ -22,7 +25,7 @@
 		margin-right: auto;
 		width: 146px;
 		height: 22px;
-		margin-top: 60px;
+		margin-top: 0;
 		margin-bottom: 12px;
 	}
 	.products-title {
@@ -34,7 +37,7 @@
 		text-align: center;
 		color: #131313;
 		width: 270px;
-		margin-bottom: 145px;
+		margin-bottom: 40px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -42,7 +45,8 @@
 	.products-card-set {
 		display: flex;
 		flex-wrap: wrap;
-		margin: 0 auto;
+		margin-left: auto;
+		margin-right: auto;
 		padding: 0;
 		list-style: none;
 	}
@@ -51,6 +55,8 @@
 		width: 280px;
 		margin-bottom: 60px;
 		border-radius: 50%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.card-icecream {
@@ -58,14 +64,14 @@
 		padding: 0px 40px 16px;
 		background-color: #aec6a5;
 		border-radius: 24px;
-		margin-bottom: 0;
+		margin-bottom: 60px;
 	}
 	.card-thumb-icecream {
 		position: relative;
 		top: 0;
 		width: 200px;
 		height: 125px;
-		margin: 0;
+		margin-top: 105px;
 	}
 	.card-thumb-icecream::before {
 		content: "";
@@ -87,7 +93,6 @@
 		padding: 0px 40px 16px;
 		background-color: #f8d24e;
 		border-radius: 24px;
-		margin-top: 60px;
 		margin-bottom: 0;
 	}
 	.card-thumb-icecoffee {
@@ -95,7 +100,7 @@
 		top: 0;
 		width: 200px;
 		height: 125px;
-		margin: 0;
+		margin-top: 105px;
 	}
 	.card-thumb-icecoffee::before {
 		content: "";
@@ -117,7 +122,7 @@
 		padding: 0px 40px 16px;
 		background-color: #d6936d;
 		border-radius: 24px;
-		margin-top: 60px;
+		margin-top: 0px;
 		margin-bottom: 0;
 	}
 	.card-thumb-milkshakes {
@@ -125,7 +130,7 @@
 		top: 0;
 		width: 200px;
 		height: 125px;
-		margin: 0;
+		margin-top: 105px;
 	}
 	.card-thumb-milkshakes::before {
 		content: "";
@@ -173,7 +178,7 @@
 		display: block;
 		text-align: center;
 		border: none;
-		margin-bottom: 16px;
+		margin-bottom: 0;
 		transition-property: background-color;
 		transition-duration: 250ms;
 		transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
@@ -182,7 +187,6 @@
 	.icon:hover,
 	.icon:focus {
 		background-color: #d9d9d9;
-		color: #131313;
 	}
 }
 /*--Mobile 480px--*/
@@ -192,11 +196,14 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
-
-		padding: 0 auto;
-		margin: 0 auto;
+		padding-top: 60px;
+		margin-left: 0;
+		margin-right: 0;
 	}
-
+	.conteiner.products {
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.laba {
 		font-family: Montserrat;
 		font-size: 18px;
@@ -208,7 +215,7 @@
 		margin-right: auto;
 		width: 146px;
 		height: 22px;
-		margin-top: 60px;
+		margin-top: 0;
 		margin-bottom: 12px;
 	}
 	.products-title {
@@ -221,7 +228,6 @@
 		color: #131313;
 		width: 270px;
 		margin-bottom: 40px;
-		margin-bottom: 145px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -234,22 +240,26 @@
 		list-style: none;
 	}
 	.products-card-item {
+		height: 533px;
 		width: 320px;
 		margin-bottom: 60px;
 		border-radius: 50%;
+		margin-left: auto;
+		margin-right: auto;
 	}
-	.card.icecream {
+	.card-icecream {
 		width: 320px;
-		padding: 0px 40px 16px;
+		padding: 0px 60px 16px;
 		background-color: #aec6a5;
 		border-radius: 24px;
+		margin-bottom: 60px;
 	}
 	.card-thumb-icecream {
 		position: relative;
 		top: 0;
 		width: 200px;
 		height: 125px;
-		margin: 0;
+		margin-top: 105px;
 	}
 	.card-thumb-icecream::before {
 		content: "";
@@ -268,17 +278,17 @@
 	}
 	.card-icecoffee {
 		width: 320px;
-		padding: 0px 40px 16px;
+		padding: 0px 60px 16px;
 		background-color: #f8d24e;
 		border-radius: 24px;
-		margin-bottom: 60px;
+		margin-bottom: 0;
 	}
 	.card-thumb-icecoffee {
 		position: relative;
 		top: 0;
 		width: 200px;
 		height: 125px;
-		margin: 0;
+		margin-top: 105px;
 	}
 	.card-thumb-icecoffee::before {
 		content: "";
@@ -297,17 +307,16 @@
 	}
 	.card-milkshakes {
 		width: 320px;
-		padding: 0px 40px 16px;
+		padding: 0px 60px 16px;
 		background-color: #d6936d;
 		border-radius: 24px;
-		margin-top: 60px;
 	}
 	.card-thumb-milkshakes {
 		position: relative;
 		top: 0;
 		width: 200px;
 		height: 125px;
-		margin: 0;
+		margin-top: 105px;
 	}
 	.card-thumb-milkshakes::before {
 		content: "";
@@ -349,13 +358,13 @@
 		line-height: 1.78;
 		letter-spacing: 0.04em;
 		text-align: center;
-		margin-bottom: 101px;
+		margin-bottom: 106px;
 	}
 	.product-arrow {
 		display: block;
 		text-align: center;
 		border: none;
-		margin-bottom: 16px;
+		margin-bottom: 0;
 		transition-property: background-color;
 		transition-duration: 250ms;
 		transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
@@ -364,7 +373,6 @@
 	.icon:hover,
 	.icon:focus {
 		background-color: #d9d9d9;
-		color: #131313;
 	}
 }
 
@@ -377,8 +385,13 @@
 		background-position: center;
 		background-size: cover;
 		width: 768px;
-		padding: 0 auto;
-		margin: 0 auto;
+		padding-top: 60px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.container.products {
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.laba {
 		font-family: Montserrat;
@@ -392,7 +405,7 @@
 		margin-bottom: 12px;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: 60px;
+		margin-top: 0;
 		margin-bottom: 12px;
 	}
 	.products-title {
@@ -411,16 +424,15 @@
 	.products-card-set {
 		display: flex;
 		flex-wrap: wrap;
-		margin-top: calc(-1 * 1px);
-		margin-left: calc(-1 * 1px);
+		margin-top: calc(-1 * 16px);
+		margin-left: calc(-1 * 16px);
 		padding: 0;
-		margin: 0;
 		list-style: none;
 	}
 	.products-card-set > .products-card-item {
-		flex-basis: calc(100% / 3 - 1px);
-		margin-left: 1px;
-		margin-top: 1px;
+		flex-basis: calc(100% / 3 - 16px);
+		margin-left: 16px;
+		margin-top: 16px;
 	}
 	.products-card-item {
 		width: 224px;
@@ -432,14 +444,13 @@
 		padding: 0px 12px 16px;
 		background-color: #aec6a5;
 		border-radius: 24px;
-		margin-top: 60px;
 	}
 	.card-thumb-icecream {
 		position: relative;
 		top: 0;
 		width: 200px;
 		height: 122px;
-		margin: 0;
+		margin-top: 105px;
 	}
 	.card-thumb-icecream::before {
 		content: "";
@@ -461,13 +472,14 @@
 		padding: 0px 12px 16px;
 		background-color: #f8d24e;
 		border-radius: 24px;
+		margin-bottom: 0;
 	}
 	.card-thumb-icecoffee {
 		position: relative;
 		top: 0;
 		width: 200px;
 		height: 122px;
-		margin: 0;
+		margin-top: 105px;
 	}
 	.card-thumb-icecoffee::before {
 		content: "";
@@ -495,7 +507,7 @@
 		top: 0;
 		width: 200px;
 		height: 122px;
-		margin: 0;
+		margin-top: 105px;
 	}
 	.card-thumb-milkshakes::before {
 		content: "";
@@ -537,13 +549,13 @@
 		line-height: 1.78;
 		letter-spacing: 0.04em;
 		text-align: center;
-		margin-bottom: 101px;
+		margin-bottom: 81px;
 	}
 	.product-arrow {
 		display: block;
 		text-align: center;
 		border: none;
-		margin-bottom: 16px;
+		margin-bottom: 0;
 		transition-property: background-color;
 		transition-duration: 250ms;
 		transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
@@ -551,7 +563,6 @@
 	.icon:hover,
 	.icon:focus {
 		background-color: #d9d9d9;
-		color: #131313;
 	}
 }
 
@@ -567,8 +578,13 @@
 		background-position: center;
 		background-size: cover;
 		width: 1200px;
-		padding: 0 auto;
-		margin: 0 auto;
+		padding-top: 60px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.container.products {
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.laba {
 		font-family: Montserrat;
@@ -582,9 +598,10 @@
 		margin-bottom: 12px;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: 60px;
+		margin-top: 0;
 		margin-bottom: 12px;
 	}
+
 	.products-title {
 		font-family: Seymour One;
 		font-size: 30px;
@@ -595,7 +612,6 @@
 		color: #131313;
 		width: 270px;
 		margin-bottom: 120px;
-
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -605,7 +621,6 @@
 		margin-top: calc(-1 * 29px);
 		margin-left: calc(-1 * 29px);
 		padding: 0;
-		margin: 0;
 		list-style: none;
 	}
 	.products-card-set > .products-card-item {
@@ -613,8 +628,14 @@
 		margin-left: 29px;
 		margin-top: 29px;
 	}
+	.products-card-item {
+		height: 719px;
+		width: 370px;
+		margin-bottom: 60px;
+		border-radius: 50%;
+	}
 	.card-icecream {
-		margin-top: 60px;
+		height: 536px;
 		padding: 0px 34px;
 		width: 370px;
 		background-color: #aec6a5;
@@ -625,7 +646,7 @@
 		top: 0;
 		width: 302px;
 		height: 189px;
-		margin: 0 auto;
+		margin-top: 135px;
 	}
 
 	.card-thumb-icecream::before {
@@ -644,6 +665,7 @@
 		border-radius: 50%;
 	}
 	.card-icecoffee {
+		height: 536px;
 		width: 370px;
 		padding: 0px 34px;
 		background-color: #f8d24e;
@@ -654,7 +676,7 @@
 		top: 0;
 		width: 302px;
 		height: 189px;
-		margin: 0 auto;
+		margin-top: 135px;
 	}
 	.card-thumb-icecoffee::before {
 		content: "";
@@ -672,18 +694,18 @@
 		border-radius: 50%;
 	}
 	.card-milkshakes {
+		height: 536px;
 		width: 370px;
 		padding: 0px 34px;
 		background-color: #d6936d;
 		border-radius: 24px;
-		margin-top: 60px;
 	}
 	.card-thumb-milkshakes {
 		position: relative;
 		top: 0;
 		width: 302px;
 		height: 189px;
-		margin: 0;
+		margin-top: 135px;
 	}
 	.card-thumb-milkshakes::before {
 		content: "";
@@ -725,7 +747,7 @@
 		line-height: 1.78;
 		letter-spacing: 0.04em;
 		text-align: center;
-		margin-bottom: 101px;
+		margin-bottom: 50px;
 	}
 	.product-arrow {
 		display: block;
@@ -735,10 +757,10 @@
 		transition-property: background-color;
 		transition-duration: 250ms;
 		transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+		outline: 1px solid #131313;
 	}
 	.icon:hover,
 	.icon:focus {
 		background-color: #d9d9d9;
-		color: #131313;
 	}
 }
