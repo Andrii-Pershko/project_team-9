@@ -1,0 +1,230 @@
+
+.modal {
+}
+.buy_now {
+	border: 3px solid #F8D24E;
+border-radius: 10px;
+	max-width: 280px;
+	margin: 0 auto;
+	height: 100%;
+	overflow-y: scroll;
+	background: #FCFCFC;
+}
+.modal__cross {
+}
+.js-modal-close {
+}
+.buy_now-wrap {
+}
+.buy_now-title {
+	padding-bottom: 83px;
+	font-family: 'Seymour One';
+font-weight: 400;
+font-size: 20px;
+line-height: 1,4;
+color: #131313;
+}
+.buy_now-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.buy_now-list input[type="radio"] {
+	display: none;
+}
+
+.buy_now-item {
+	width: 132px;
+	height: 136px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.buy_now-item {
+	margin-bottom: 83px;
+}
+.buy_now-item-green {
+}
+.item_wrap {
+	width: 100%;
+	height: 100%;
+	filter: drop-shadow(0 5.26027px 19.726px #d414431a);
+	border-radius: 15px;
+	flex-direction: column;
+	justify-content: end;
+	display: flex;
+	position: relative;
+	transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.item_wrap-green {
+	border: 2px solid #96af8c;
+}
+.item_wrap-green .item_wrap-bg {
+	background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+	box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+.buy_now-list input[type="checkbox"]:checked + .item_wrap.item_wrap-green {
+	background: #96af8c;
+}
+.item_wrap-yellow {
+	border: 2px solid #efd478;
+}
+.item_wrap-yellow .item_wrap-bg {
+	background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
+	box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+}
+.buy_now-list input[type="checkbox"]:checked + .item_wrap.item_wrap-yellow {
+	background: #efd478;
+}
+.item_wrap-orange {
+	border: 2px solid #d6936d;
+}
+.item_wrap-orange .item_wrap-bg {
+	background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
+	box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+}
+.buy_now-list input[type="checkbox"]:checked + .item_wrap.item_wrap-orange {
+	background: #d6936d;
+}
+.buy_now-list_wrap {
+}
+.item_wrap-bg {
+	position: absolute;
+	top: -50px;
+	border-radius: 50%;
+}
+.item_wrap-bg img {
+	transform: translateY(-7px);
+}
+
+.item_wrap-text {
+	font-weight: 700;
+	line-height: 1.25;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #131313;
+	padding: 95px 0 20px 0;
+}
+.buy_now-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 224px;
+}
+.buy_now-form > *:not(:last-child) {
+	margin-bottom: 12px;
+}
+.buy_now-lable {
+	width: 100%;
+}
+.buy_now-input,
+.buy_now-textarea {
+	padding: 8px 12px;
+	background: rgba(248, 210, 78, 0.1);
+	border: 1px solid #84a178;
+	border-radius: 10px;
+	width: 100%;
+	height: 32px;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 140%;
+	color: #131313;
+}
+.buy_now-input:focus,
+.buy_now-textarea:focus {
+	border: 1px solid #f8d24e;
+	outline: none;
+}
+.buy_now-textarea {
+	height: 65px;
+}
+.buy_now-button {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #131313;
+	width: 114px;
+	height: 42px;
+	background: #f8d24e;
+	border-radius: 10px;
+	border: none;
+	margin-top: 24px;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.25;
+	transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.buy_now-button:hover {
+	background: #0a8817;
+}
+.buy_now-button:focus {
+	background: #0a8817;
+	color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: 768px;
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+	.buy_now {
+		max-width: 568px;
+		height: 644px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	.modal__cross {
+	}
+	.js-modal-close {
+	}
+	.buy_now-wrap {
+	}
+	.buy_now-title {
+	}
+	.buy_now-list {
+	}
+	.buy_now-list_wrap {
+		display: flex;
+		gap: 32px;
+		margin-bottom: 40px;
+	}
+	.buy_now-item {
+		margin: 0;
+	}
+	.item_wrap {
+	}
+	.item_wrap-green {
+	}
+	.item_wrap-bg {
+	}
+	.item_wrap-text {
+	}
+	.item_wrap-yellow {
+	}
+	.item_wrap-orange {
+	}
+	.buy_now-form {
+	}
+	.buy_now-form > :not(:last-child) {
+		margin-bottom: 16px;
+	}
+	.buy_now-lable {
+	}
+	.buy_now-input {
+	}
+	.buy_now-textarea {
+	}
+	.buy_now-button {
+		margin-top: 32px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.container {
+		max-width: 1200px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+}

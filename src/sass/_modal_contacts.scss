@@ -1,5 +1,5 @@
 .our-location-modal {
-	width: 568px;
+	width: 280px;
 	background: #fcfcfc;
 	border: 2px solid #f8d24e;
 	border-radius: 10px;
@@ -8,6 +8,21 @@
 .open-map-btn {
 	margin: auto;
 	display: block;
+}
+
+.map_location {
+	width: 224px;
+	height: 199px;
+}
+
+@media screen and (min-width: 768px) {
+	.map_location {
+		width: 448px;
+		height: 260px;
+	}
+	.our-location-modal {
+		width: 568px;
+	}
 }
 
 .title-modal-location {
@@ -21,8 +36,8 @@
 
 ///modal-franshise///
 .modal-franshise {
-	width: 570px;
-	padding: 32px 60px;
+	width: 282px;
+	padding: 28px 28px;
 }
 .modal-fran-text {
 	text-align: left;
@@ -41,8 +56,8 @@
 }
 
 .franchise-input {
-	width: 368px;
-	height: 42px;
+	width: 224px;
+	height: 32px;
 	align-self: center;
 	background: rgba(248, 210, 78, 0.1);
 	border: 1px solid #84a178;
@@ -51,6 +66,7 @@
 }
 textarea {
 	resize: none;
+	border: 0;
 }
 .add {
 	height: 84px;
@@ -65,6 +81,7 @@ textarea {
 
 .button-open-map {
 	margin-top: 32px;
+	filter: drop-shadow(0 4px 4px #00000040);
 }
 .margin-right {
 	margin-left: 0;
@@ -72,4 +89,16 @@ textarea {
 
 .submit-btn {
 	margin-top: 32px;
+}
+
+@media screen and (min-width: 768px) {
+	.modal-franshise {
+		width: 568px;
+		padding: 32px 60px;
+	}
+
+	.franchise-input {
+		width: 368px;
+		height: 42px;
+	}
 }

@@ -1,7 +1,7 @@
 
 .footer{
   background-color: var(--primal-color);
-padding: 60px 0 20px 0;
+padding: 60px 20px ;
 }
 .footer-copy{
   position: relative;
@@ -96,11 +96,9 @@ padding: 60px 0 20px 0;
   border-radius: 50%;
 }
 
-
-
-
 .row-phone {
   display: flex;
+  justify-content: end;
 }
 .row-phone-text {
   padding-right: 4px;
@@ -118,7 +116,6 @@ width: 158px;
 margin: 0 auto;
 padding: 20px 0 0 0;
 }
-
 
 @media screen and (min-width: 768px) {
     .container {
@@ -193,9 +190,6 @@ padding: 20px 0 0 0;
     width: 100%;
     }
 }
-
-
-
 
 
 @media screen and (min-width: 1200px) {
