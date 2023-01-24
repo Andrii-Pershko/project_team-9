@@ -1,5 +1,4 @@
 .general {
-	margin-top: 12px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -12,6 +11,7 @@
 }
 
 .navigation {
+	padding-top: 12px;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -42,7 +42,6 @@
 // ================= Mobil window ======================
 
 .menu-container {
-  height: 568px;
   background-color: var(--primal-color);
 }
 
@@ -194,7 +193,7 @@
 	border: none;
 }
 
-/* ======================================= 480 ===================================== */
+/* ======================================= max ===================================== */
 @media screen and (max-width: 767px) {
 	.modal-btn {
 		display: none;
@@ -207,22 +206,14 @@
 	}
 }
 
-/* ====================================== mobil ==================================== */
-@media screen and (min-width: 480px) {
-	.menu-container {
-		margin-top: 20px;
-		height: 1024px;
-	}
-}
-
 /* ======================================= Tablet ================================== */
 @media screen and (min-width: 768px) {
 	.header-button {
 		display: none;
 	}
-	.general {
-		margin-top: 20px;
-	}
+		.navigation {
+			padding-top: 20px;
+		}
 
 	.mobile-modal-btn {
 		display: none;
@@ -243,10 +234,6 @@
 @media screen and (min-width: 1200px) {
 	.header-button {
 		display: block;
-	}
-
-	.general {
-		margin-top: 8px;
 	}
 
 	.logo-img {
