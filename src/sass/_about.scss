@@ -22,7 +22,7 @@
 	justify-content: center;
 	margin-top: 0;
 	margin-bottom: 20px;
-	font-family: 'Seymour One';
+	font-family: "Seymour One";
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.5;
@@ -242,12 +242,11 @@
 .modal-open:hover {
 	background-color: var(--hover-color);
 }
-.modal-open:focus{
+.modal-open:focus {
 	background-color: var(--hover-color);
-		color: var(--focus-color);
+	color: var(--focus-color);
 }
-.modal-open:focus+
-.icon-svg{
+.modal-open:focus + .icon-svg {
 	background-color: var(--hover-color);
 	color: var(--focus-color);
 	fill: var(--focus-color);
@@ -363,7 +362,7 @@
 		animation: animate105 3s 1s infinite;
 	}
 	.modal-p {
-		font-family: 'Seymour One';
+		font-family: "Seymour One";
 		font-weight: 400;
 		font-size: 20px;
 		line-height: 1.4;
@@ -474,5 +473,20 @@
 		line-height: 1.28;
 		animation: animate105 3s 1s infinite;
 	}
+}
 
+.read_more_span::after {
+	content: "";
+	display: block;
+	width: 12px;
+	height: 12px;
+	background-image: url(/src/images/img/svg/svg/arrow_bold.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	align-self: center;
+	margin-left: 4px;
+}
+
+.about_btn-open {
+	display: flex;
 }
