@@ -1,5 +1,4 @@
-/*--for Mobile Productions--*/
-/* 0-px - 767px */
+
 @media screen and (min-width: 320px) {
 	.section {
 		background-image: url(/src/images/img/products/Backgroud/backgroud_mobile.png);
@@ -757,7 +756,6 @@
 		transition-property: background-color;
 		transition-duration: 250ms;
 		transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-		outline: 1px solid #131313;
 	}
 	.icon:hover,
 	.icon:focus {
