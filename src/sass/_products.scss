@@ -25,7 +25,7 @@
 		margin-top: 60px;
 		margin-bottom: 12px;
 	}
-	h1 {
+	.products-title {
 		font-family: Seymour One;
 		font-size: 30px;
 		font-weight: 400;
@@ -58,7 +58,7 @@
 		padding: 0px 40px 16px;
 		background-color: #aec6a5;
 		border-radius: 24px;
-		margin-bottom: 60px;
+		margin-bottom: 0;
 	}
 	.card-thumb-icecream {
 		position: relative;
@@ -88,7 +88,7 @@
 		background-color: #f8d24e;
 		border-radius: 24px;
 		margin-top: 60px;
-		margin-bottom: 60px;
+		margin-bottom: 0;
 	}
 	.card-thumb-icecoffee {
 		position: relative;
@@ -169,19 +169,16 @@
 		text-align: center;
 		margin-bottom: 101px;
 	}
-	.js-open-modal {
-		display: flex;
-
-		margin-bottom: 16px;
+	.product-arrow {
+		display: block;
+		text-align: center;
 		border: none;
-
+		margin-bottom: 16px;
 		transition-property: background-color;
 		transition-duration: 250ms;
 		transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 	}
-	.icon {
-		outline: 1px solid #131313;
-	}
+
 	.icon:hover,
 	.icon:focus {
 		background-color: #d9d9d9;
@@ -214,7 +211,7 @@
 		margin-top: 60px;
 		margin-bottom: 12px;
 	}
-	h1 {
+	.products-title {
 		font-family: Seymour One;
 		font-size: 30px;
 		font-weight: 400;
@@ -354,19 +351,16 @@
 		text-align: center;
 		margin-bottom: 101px;
 	}
-	.js-open-modal {
-		display: flex;
-
-		margin-bottom: 16px;
+	.product-arrow {
+		display: block;
+		text-align: center;
 		border: none;
-
+		margin-bottom: 16px;
 		transition-property: background-color;
 		transition-duration: 250ms;
 		transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 	}
-	.icon {
-		outline: 1px solid #131313;
-	}
+
 	.icon:hover,
 	.icon:focus {
 		background-color: #d9d9d9;
@@ -401,7 +395,7 @@
 		margin-top: 60px;
 		margin-bottom: 12px;
 	}
-	h1 {
+	.products-title {
 		font-family: Seymour One;
 		font-size: 30px;
 		font-weight: 400;
@@ -417,16 +411,16 @@
 	.products-card-set {
 		display: flex;
 		flex-wrap: wrap;
-		margin-top: calc(-1 * 16px);
-		margin-left: calc(-1 * 16px);
+		margin-top: calc(-1 * 1px);
+		margin-left: calc(-1 * 1px);
 		padding: 0;
 		margin: 0;
 		list-style: none;
 	}
 	.products-card-set > .products-card-item {
-		flex-basis: calc(100% / 3 - 16px);
-		margin-left: 16px;
-		margin-top: 16px;
+		flex-basis: calc(100% / 3 - 1px);
+		margin-left: 1px;
+		margin-top: 1px;
 	}
 	.products-card-item {
 		width: 224px;
@@ -545,18 +539,14 @@
 		text-align: center;
 		margin-bottom: 101px;
 	}
-	.js-open-modal {
-		display: flex;
-
-		margin-bottom: 16px;
+	.product-arrow {
+		display: block;
+		text-align: center;
 		border: none;
-
+		margin-bottom: 16px;
 		transition-property: background-color;
 		transition-duration: 250ms;
 		transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-	}
-	.icon {
-		outline: 1px solid #131313;
 	}
 	.icon:hover,
 	.icon:focus {
@@ -595,7 +585,7 @@
 		margin-top: 60px;
 		margin-bottom: 12px;
 	}
-	h1 {
+	.products-title {
 		font-family: Seymour One;
 		font-size: 30px;
 		font-weight: 400;
@@ -737,18 +727,14 @@
 		text-align: center;
 		margin-bottom: 101px;
 	}
-	.js-open-modal {
-		display: flex;
-
-		margin-bottom: 16px;
+	.product-arrow {
+		display: block;
+		text-align: center;
 		border: none;
-
+		margin-bottom: 16px;
 		transition-property: background-color;
 		transition-duration: 250ms;
 		transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-	}
-	.icon {
-		outline: 1px solid #131313;
 	}
 	.icon:hover,
 	.icon:focus {
