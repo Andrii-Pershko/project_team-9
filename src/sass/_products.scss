@@ -71,15 +71,17 @@
 		width: 200px;
 		height: 125px;
 		margin-top: 105px;
+		border-radius: 50%;
 	}
+
 	.card-thumb-icecream::before {
 		content: "";
 		position: absolute;
 		top: -105px;
 		left: 0px;
 		width: 200px;
-		height: 211px;
-		z-index: 1;
+		height: 200px;
+		z-index: 2;
 		background-image: url("/src/images/img/products/tablet-mobile/ice.cream.png");
 		background-repeat: no-repeat;
 		background-position: center;
@@ -87,6 +89,20 @@
 		box-shadow: 0px 8px 30px 0px #0a881740;
 		border-radius: 50%;
 	}
+
+	.card-thumb-icecream::after {
+		content: "";
+		position: absolute;
+		top: -105px;
+		left: 0px;
+		width: 200px;
+		height: 211px;
+		border-radius: 50%;
+		z-index: 1;
+		background-color: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+		box-shadow: 0px 5.342193126678467px 20.033222198486328px 0px #0a881740;
+	}
+
 	.card-icecoffee {
 		width: 280px;
 		padding: 0px 40px 16px;
@@ -107,8 +123,8 @@
 		top: -105px;
 		left: 0px;
 		width: 200px;
-		height: 211px;
-		z-index: 1;
+		height: 200px;
+		z-index: 2;
 		background-image: url("/src/images/img/products/tablet-mobile/ice.coffee.png");
 		background-repeat: no-repeat;
 		background-position: center;
@@ -116,6 +132,20 @@
 		box-shadow: 0px 8px 30px 0px #0a881740;
 		border-radius: 50%;
 	}
+
+	.card-thumb-icecoffee::after {
+		content: "";
+		position: absolute;
+		top: -105px;
+		left: 0px;
+		width: 200px;
+		height: 211px;
+		border-radius: 50%;
+		z-index: 1;
+		background-color: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
+		box-shadow: 0px 5.342193126678467px 20.033222198486328px 0px #0a881740;
+	}
+
 	.card-milkshakes {
 		width: 280px;
 		padding: 0px 40px 16px;
@@ -137,14 +167,26 @@
 		top: -105px;
 		left: 0px;
 		width: 200px;
-		height: 211px;
-		z-index: 1;
+		height: 200px;
+		z-index: 2;
 		background-image: url("/src/images/img/products/tablet-mobile/milkshakes.png");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
 		box-shadow: 0px 8px 30px 0px #0a881740;
 		border-radius: 50%;
+	}
+	.card-thumb-milkshakes::after {
+		content: "";
+		position: absolute;
+		top: -105px;
+		left: 0px;
+		width: 200px;
+		height: 211px;
+		border-radius: 50%;
+		z-index: 1;
+		background-color: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
+		box-shadow: 0px 5.342193126678467px 20.033222198486328px 0px #0a881740;
 	}
 
 	.card-content {
@@ -181,7 +223,6 @@
 		transition-property: background-color;
 		transition-duration: 250ms;
 		transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-		outline: 1px solid #131313;
 	}
 
 	.icon:hover {
@@ -267,8 +308,8 @@
 		top: -105px;
 		left: 0px;
 		width: 200px;
-		height: 211px;
-		z-index: 1;
+		height: 200px;
+		z-index: 2;
 		background-image: url("/src/images/img/products/tablet-mobile/ice.cream.png");
 		background-repeat: no-repeat;
 		background-position: center;
@@ -276,6 +317,19 @@
 		box-shadow: 0px 8px 30px 0px #0a881740;
 		border-radius: 50%;
 	}
+	.card-thumb-icecream::after {
+		content: "";
+		position: absolute;
+		top: -105px;
+		left: 0px;
+		width: 200px;
+		height: 211px;
+		border-radius: 50%;
+		z-index: 1;
+		background-color: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+		box-shadow: 0px 5.342193126678467px 20.033222198486328px 0px #0a881740;
+	}
+
 	.card-icecoffee {
 		width: 320px;
 		padding: 0px 60px 16px;
@@ -296,8 +350,8 @@
 		top: -105px;
 		left: 0px;
 		width: 200px;
-		height: 211px;
-		z-index: 1;
+		height: 200px;
+		z-index: 2;
 		background-image: url("/src/images/img/products/tablet-mobile/ice.coffee.png");
 		background-repeat: no-repeat;
 		background-position: center;
@@ -305,6 +359,19 @@
 		box-shadow: 0px 8px 30px 0px #0a881740;
 		border-radius: 50%;
 	}
+	.card-thumb-icecoffee::after {
+		content: "";
+		position: absolute;
+		top: -105px;
+		left: 0px;
+		width: 200px;
+		height: 211px;
+		border-radius: 50%;
+		z-index: 1;
+		background-color: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
+		box-shadow: 0px 5.342193126678467px 20.033222198486328px 0px #0a881740;
+	}
+
 	.card-milkshakes {
 		width: 320px;
 		padding: 0px 60px 16px;
@@ -324,14 +391,26 @@
 		top: -105px;
 		left: 0px;
 		width: 200px;
-		height: 211px;
-		z-index: 1;
+		height: 200px;
+		z-index: 2;
 		background-image: url("/src/images/img/products/tablet-mobile/milkshakes.png");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
 		box-shadow: 0px 8px 30px 0px #0a881740;
 		border-radius: 50%;
+	}
+	.card-thumb-milkshakes::after {
+		content: "";
+		position: absolute;
+		top: -105px;
+		left: 0px;
+		width: 200px;
+		height: 211px;
+		border-radius: 50%;
+		z-index: 1;
+		background-color: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
+		box-shadow: 0px 5.342193126678467px 20.033222198486328px 0px #0a881740;
 	}
 
 	.card-content {
@@ -368,7 +447,6 @@
 		transition-property: background-color;
 		transition-duration: 250ms;
 		transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-		outline: 1px solid #131313;
 	}
 }
 
@@ -454,8 +532,8 @@
 		top: -105px;
 		left: 0px;
 		width: 200px;
-		height: 212px;
-		z-index: 1;
+		height: 200px;
+		z-index: 2;
 		background-image: url("/src/images/img/products/tablet-mobile/ice.cream.png");
 		background-repeat: no-repeat;
 		background-position: center;
@@ -463,6 +541,19 @@
 		box-shadow: 0px 8px 30px 0px #0a881740;
 		border-radius: 50%;
 	}
+	.card-thumb-icecream::after {
+		content: "";
+		position: absolute;
+		top: -105px;
+		left: 0px;
+		width: 200px;
+		height: 211px;
+		border-radius: 50%;
+		z-index: 1;
+		background-color: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+		box-shadow: 0px 5.342193126678467px 20.033222198486328px 0px #0a881740;
+	}
+
 	.card-icecoffee {
 		width: 224px;
 		padding: 0px 12px 16px;
@@ -483,8 +574,8 @@
 		top: -105px;
 		left: 0px;
 		width: 200px;
-		height: 212px;
-		z-index: 1;
+		height: 200px;
+		z-index: 2;
 		background-image: url("/src/images/img/products/tablet-mobile/ice.coffee.png");
 		background-repeat: no-repeat;
 		background-position: center;
@@ -492,6 +583,19 @@
 		box-shadow: 0px 8px 30px 0px #0a881740;
 		border-radius: 50%;
 	}
+	.card-thumb-icecoffee::after {
+		content: "";
+		position: absolute;
+		top: -105px;
+		left: 0px;
+		width: 200px;
+		height: 212px;
+		border-radius: 50%;
+		z-index: 1;
+		background-color: (0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
+		box-shadow: 0px 5.342193126678467px 20.033222198486328px 0px #0a881740;
+	}
+
 	.card-milkshakes {
 		width: 224px;
 		padding: 0px 12px 16px;
@@ -511,14 +615,26 @@
 		top: -105px;
 		left: 0px;
 		width: 200px;
-		height: 212px;
-		z-index: 1;
+		height: 200px;
+		z-index: 2;
 		background-image: url("/src/images/img/products/tablet-mobile/milkshakes.png");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
 		box-shadow: 0px 8px 30px 0px #0a881740;
 		border-radius: 50%;
+	}
+	.card-thumb-milkshakes::after {
+		content: "";
+		position: absolute;
+		top: -105px;
+		left: 0px;
+		width: 200px;
+		height: 211px;
+		border-radius: 50%;
+		z-index: 1;
+		background-color: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
+		box-shadow: 0px 5.342193126678467px 20.033222198486328px 0px #0a881740;
 	}
 
 	.card-content {
@@ -555,7 +671,6 @@
 		transition-property: background-color;
 		transition-duration: 250ms;
 		transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-		outline: 1px solid #131313;
 	}
 	.icon:hover,
 	.icon:focus {
@@ -652,8 +767,8 @@
 		top: -159px;
 		left: 0px;
 		width: 302px;
-		height: 318px;
-		z-index: 1;
+		height: 302px;
+		z-index: 2;
 		background-image: url("/src/images/img/products/desktop/ice.cream.png");
 		background-repeat: no-repeat;
 		background-position: center;
@@ -661,6 +776,19 @@
 		border-radius: 50%;
 		box-shadow: 0px 8px 30px 0px #0a881740;
 	}
+	.card-thumb-icecream::after {
+		content: "";
+		position: absolute;
+		top: -159px;
+		left: 0px;
+		width: 302px;
+		height: 318px;
+		border-radius: 50%;
+		z-index: 1;
+		background-color: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+		box-shadow: 0px 5.342193126678467px 20.033222198486328px 0px #0a881740;
+	}
+
 	.card-icecoffee {
 		height: 536px;
 		width: 370px;
@@ -681,14 +809,26 @@
 		top: -159px;
 		left: 0px;
 		width: 302px;
-		height: 318px;
-		z-index: 1;
+		height: 302px;
+		z-index: 2;
 		background-image: url("/src/images/img/products/desktop/ice.coffee.png");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
 		box-shadow: 0px 8px 30px 0px #0a881740;
 		border-radius: 50%;
+	}
+	.card-thumb-icecoffee::after {
+		content: "";
+		position: absolute;
+		top: -159px;
+		left: 0px;
+		width: 302px;
+		height: 318px;
+		border-radius: 50%;
+		z-index: 1;
+		background-color: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
+		box-shadow: 0px 5.342193126678467px 20.033222198486328px 0px #0a881740;
 	}
 	.card-milkshakes {
 		height: 536px;
@@ -710,14 +850,26 @@
 		top: -159px;
 		left: 0px;
 		width: 302px;
-		height: 318px;
-		z-index: 1;
+		height: 302px;
+		z-index: 2;
 		background-image: url("/src/images/img/products/desktop/milkshakes.png");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
 		box-shadow: 0px 8px 30px 0px #0a881740;
 		border-radius: 50%;
+	}
+	.card-thumb-milkshakes::after {
+		content: "";
+		position: absolute;
+		top: -159px;
+		left: 0px;
+		width: 302px;
+		height: 318px;
+		border-radius: 50%;
+		z-index: 1;
+		background-color: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
+		box-shadow: 0px 5.342193126678467px 20.033222198486328px 0px #0a881740;
 	}
 
 	.card-content {
@@ -754,18 +906,17 @@
 		transition-property: background-color;
 		transition-duration: 250ms;
 		transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-		outline: 1px solid #131313;
 	}
-}
 
-.element-animation {
-	/* Скроем элемент в начальном состоянии */
-	opacity: 0;
-	transform: translateY(20px);
-}
+	.element-animation {
+		/* Скроем элемент в начальном состоянии */
+		opacity: 0;
+		transform: translateY(20px);
+	}
 
-.element-animation.element-show {
-	opacity: 1;
-	transition: all 1s;
-	transform: translateY(0%);
+	.element-animation.element-show {
+		opacity: 1;
+		transition: all 1s;
+		transform: translateY(0%);
+	}
 }
