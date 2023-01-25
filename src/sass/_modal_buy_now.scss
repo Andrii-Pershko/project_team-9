@@ -1,5 +1,3 @@
-.modal {
-}
 .buy_now {
 	border: 3px solid #f8d24e;
 	border-radius: 10px;
@@ -152,6 +150,17 @@
 	background: #0a8817;
 	color: #ffffff;
 }
+@media screen and (max-width: 767px) {
+	.buy_now {
+		height: 100%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		max-height: 575px;
+		overflow: hidden;
+		overflow-y: auto;
+	}
+}
 
 @media screen and (min-width: 768px) {
 	.container {
@@ -159,6 +168,7 @@
 		padding-left: 32px;
 		padding-right: 32px;
 	}
+
 	.buy_now {
 		max-width: 568px;
 		height: 644px;
@@ -192,7 +202,6 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		overflow-y: scroll;
 		max-height: 575px;
 	}
 }
