@@ -69,7 +69,7 @@ textarea {
 	border: 0;
 }
 .add {
-	height: 84px;
+	height: 64px;
 }
 .franchise-lable:not(:last-child) {
 	margin-bottom: 16px;
@@ -100,5 +100,18 @@ textarea {
 	.franchise-input {
 		width: 368px;
 		height: 42px;
+	}
+	.add {
+		height: 84px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.modal-franshise {
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, 0);
+		max-height: 100%;
+		overflow-y: scroll;
 	}
 }

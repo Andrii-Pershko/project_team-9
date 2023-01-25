@@ -145,3 +145,11 @@ body {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+
+@media screen and (max-width: 767px) {
+	.modal {
+		transform: translate(-50%, -50%);
+		top: 50%;
+		left: 50%;
+	}
+}
