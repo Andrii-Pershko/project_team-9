@@ -105,3 +105,13 @@ textarea {
 		height: 84px;
 	}
 }
+
+@media screen and (max-width: 767px) {
+	.modal-franshise {
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, 0);
+		max-height: 100%;
+		overflow-y: scroll;
+	}
+}
