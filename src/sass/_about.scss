@@ -246,14 +246,21 @@
 	background-color: var(--hover-color);
 	color: var(--focus-color);
 }
-.modal-open:focus + .icon-svg {
-	background-color: var(--hover-color);
-	color: var(--focus-color);
+.modal-open:focus .about-item_icon{
 	fill: var(--focus-color);
 }
 
 .list-button {
 	position: relative;
+}
+.about-item_icon{
+	fill: #000000;
+	margin-left: 4px;
+	transition: all 1s;
+}
+.about_button{
+	display: flex;
+	align-items: center;
 }
 
 /*================стиль для кнопки модалки========*/
@@ -475,18 +482,4 @@
 	}
 }
 
-.read_more_span::after {
-	content: "";
-	display: block;
-	width: 12px;
-	height: 12px;
-	background-image: url(/src/images/img/svg/svg/arrow_bold.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	align-self: center;
-	margin-left: 4px;
-}
 
-.about_btn-open {
-	display: flex;
-}
