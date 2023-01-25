@@ -1,28 +1,20 @@
-
 .modal {
 }
 .buy_now {
-	border: 3px solid #F8D24E;
-border-radius: 10px;
+	border: 3px solid #f8d24e;
+	border-radius: 10px;
 	max-width: 280px;
 	margin: 0 auto;
-	height: 100%;
-	overflow-y: scroll;
-	background: #FCFCFC;
+	background: #fcfcfc;
 }
-.modal__cross {
-}
-.js-modal-close {
-}
-.buy_now-wrap {
-}
+
 .buy_now-title {
 	padding-bottom: 83px;
-	font-family: 'Seymour One';
-font-weight: 400;
-font-size: 20px;
-line-height: 1,4;
-color: #131313;
+	font-family: "Seymour One";
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1, 4;
+	color: #131313;
 }
 .buy_now-list {
 	display: flex;
@@ -43,8 +35,7 @@ color: #131313;
 .buy_now-item {
 	margin-bottom: 83px;
 }
-.buy_now-item-green {
-}
+
 .item_wrap {
 	width: 100%;
 	height: 100%;
@@ -86,8 +77,7 @@ color: #131313;
 .buy_now-list input[type="checkbox"]:checked + .item_wrap.item_wrap-orange {
 	background: #d6936d;
 }
-.buy_now-list_wrap {
-}
+
 .item_wrap-bg {
 	position: absolute;
 	top: -50px;
@@ -175,16 +165,7 @@ color: #131313;
 		margin: 0 auto;
 		overflow: hidden;
 	}
-	.modal__cross {
-	}
-	.js-modal-close {
-	}
-	.buy_now-wrap {
-	}
-	.buy_now-title {
-	}
-	.buy_now-list {
-	}
+
 	.buy_now-list_wrap {
 		display: flex;
 		gap: 32px;
@@ -193,29 +174,7 @@ color: #131313;
 	.buy_now-item {
 		margin: 0;
 	}
-	.item_wrap {
-	}
-	.item_wrap-green {
-	}
-	.item_wrap-bg {
-	}
-	.item_wrap-text {
-	}
-	.item_wrap-yellow {
-	}
-	.item_wrap-orange {
-	}
-	.buy_now-form {
-	}
-	.buy_now-form > :not(:last-child) {
-		margin-bottom: 16px;
-	}
-	.buy_now-lable {
-	}
-	.buy_now-input {
-	}
-	.buy_now-textarea {
-	}
+
 	.buy_now-button {
 		margin-top: 32px;
 	}
@@ -226,5 +185,14 @@ color: #131313;
 		max-width: 1200px;
 		padding-left: 16px;
 		padding-right: 16px;
+	}
+
+	.buy_now {
+		height: 100%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		overflow-y: scroll;
+		max-height: 575px;
 	}
 }
