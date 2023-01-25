@@ -728,3 +728,15 @@
 		transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 	}
 }
+
+.element-animation {
+	/* Скроем элемент в начальном состоянии */
+	opacity: 0;
+	transform: translateY(20px);
+}
+
+.element-animation.element-show {
+	opacity: 1;
+	transition: all 1s;
+	transform: translateY(0%);
+}
