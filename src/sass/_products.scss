@@ -1,5 +1,3 @@
-/*--for Mobile Productions--*/
-/* 0-px - 767px */
 @media screen and (min-width: 320px) {
 	.section {
 		background-image: url(/src/images/img/products/Backgroud/backgroud_mobile.png);
@@ -186,9 +184,8 @@
 		outline: 1px solid #131313;
 	}
 
-	.icon:hover,
-	.icon:focus {
-		background-color: #d9d9d9;
+	.icon:hover {
+		fill: #fcfcfc;
 	}
 }
 /*--Mobile 480px--*/
@@ -372,11 +369,6 @@
 		transition-duration: 250ms;
 		transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 		outline: 1px solid #131313;
-	}
-
-	.icon:hover,
-	.icon:focus {
-		background-color: #d9d9d9;
 	}
 }
 
@@ -764,8 +756,16 @@
 		transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 		outline: 1px solid #131313;
 	}
-	.icon:hover,
-	.icon:focus {
-		background-color: #d9d9d9;
-	}
+}
+
+.element-animation {
+	/* Скроем элемент в начальном состоянии */
+	opacity: 0;
+	transform: translateY(20px);
+}
+
+.element-animation.element-show {
+	opacity: 1;
+	transition: all 1s;
+	transform: translateY(0%);
 }

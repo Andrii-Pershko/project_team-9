@@ -45,7 +45,7 @@ ul {
 	box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 	margin-bottom: 16px;
 }
-.card-address:nth-child(1){
+.card-address:nth-child(1) {
 	margin-top: -353px;
 }
 
@@ -97,7 +97,7 @@ a {
 	color: #d6936d;
 	line-height: 183%;
 	height: 50px;
-    display: block;
+	display: block;
 }
 .link-address:focus,
 .link-address:hover {
@@ -224,9 +224,6 @@ a {
 		flex-direction: column;
 		align-items: center;
 	}
-
-		
-
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -242,7 +239,7 @@ a {
 		display: flex;
 		justify-content: space-evenly;
 	}
-	.card-address:nth-child(1){
+	.card-address:nth-child(1) {
 		margin-top: -299px;
 	}
 	.card-address {
@@ -255,7 +252,6 @@ a {
 		margin-bottom: 40px;
 		margin-top: -299px;
 	}
-
 
 	.name-cafe {
 		font-size: 16px;
@@ -346,7 +342,7 @@ a {
 		margin-bottom: 60px;
 		margin-top: -128px;
 	}
-	.card-address:nth-child(1){
+	.card-address:nth-child(1) {
 		margin-top: -128px;
 	}
 

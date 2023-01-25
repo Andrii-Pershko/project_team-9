@@ -28,21 +28,20 @@
 }
 
 .mobil-menu-open-icon {
-  width: 32px;
-  height: 32px;
-  fill: var(--primal-color);
+	width: 32px;
+	height: 32px;
+	fill: var(--primal-color);
 }
 
 .mobil-menu-open-icon:hover,
 .mobil-menu-open-icon:focus .mobile-menu__icon-close {
-  fill: var(--focus-color);
-  cursor: pointer;
+	fill: var(--focus-color);
 }
 /* /--------------------------------------------------- */
 // ================= Mobil window ======================
 
 .menu-container {
-  background-color: var(--primal-color);
+	background-color: var(--primal-color);
 }
 
 .menu-logo-btn {
@@ -119,7 +118,6 @@
 
 	width: 152px;
 	height: 42px;
-	cursor: pointer;
 	background: var(--second-color);
 	border-radius: 10px;
 	border-color: transparent;
@@ -136,24 +134,22 @@
 }
 
 .mobile-close-btn {
-  fill: var(--second-color);
-  cursor: pointer;
-  border-color: transparent;
-  background-color: var(--primal-color);
-  margin: 0;
-  padding: 0;
-  border: 0;
-  padding-top: 5px;
+	fill: var(--second-color);
+	border-color: transparent;
+	background-color: var(--primal-color);
+	margin: 0;
+	padding: 0;
+	border: 0;
+	padding-top: 5px;
 }
 
 .mobile-close-btn:hover {
-  fill: var(--hover-color);
+	fill: var(--hover-color);
 }
 
 .mobile-close-btn:focus {
-  fill: var(--focus-color);
+	fill: var(--focus-color);
 }
-
 
 /* ==================================================== */
 /* Кнопка модального вікна */
@@ -170,7 +166,6 @@
 
 	width: 152px;
 	height: 42px;
-	cursor: pointer;
 	background: var(--second-color);
 	border-radius: 10px;
 	border-color: transparent;
@@ -211,9 +206,9 @@
 	.header-button {
 		display: none;
 	}
-		.navigation {
-			padding-top: 20px;
-		}
+	.navigation {
+		padding-top: 20px;
+	}
 
 	.mobile-modal-btn {
 		display: none;
@@ -264,14 +259,14 @@
 		color: var(--focus-color);
 	}
 
-  .menu-link {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    display: flex;
-    align-items: center;
-    color: var(--focus-color);
-  }
+	.menu-link {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1.25;
+		display: flex;
+		align-items: center;
+		color: var(--focus-color);
+	}
 
 	.menu-link:focus {
 		color: var(--focus-color);
