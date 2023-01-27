@@ -154,10 +154,6 @@
 @media screen and (max-width: 767px) {
 	.buy_now {
 		height: 100%;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		max-height: 575px;
 		overflow: hidden;
 		overflow-y: auto;
 	}
@@ -185,9 +181,29 @@
 	.buy_now-item {
 		margin: 0;
 	}
+	.buy_now-item:nth-child(1):hover {
+		box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+		border-radius: 15px;
+	}
+	.buy_now-item:nth-child(2):hover {
+		box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+		border-radius: 15px;
+	}
+	.buy_now-item:nth-child(3):hover {
+		box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+		border-radius: 15px;
+	}
 
 	.buy_now-button {
 		margin-top: 32px;
+		outline: none;
+	}
+
+	.buy_now-input:hover,
+	.buy_now-input:focus,
+	.buy_now-textarea:hover,
+	.buy_now-textarea:focus {
+			box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
 	}
 }
 
