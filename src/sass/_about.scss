@@ -1,205 +1,485 @@
 .about {
-     display: flex;
-     flex-direction: column;
-     background: #84A178;
-     width: 320px;
-     margin-left: auto;
-     margin-right: auto;
-     padding-left: 20px;
-     padding-right: 20px;
+	display: flex;
+	flex-direction: column;
+	background: var(--primal-color);
 
+	justify-content: center;
 
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.list-button {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .modal-p {
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
+	display: flex;
+	justify-content: center;
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-family: "Seymour One";
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.title-p {
+	margin-top: 20px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 140%;
 }
 
 .button-studio {
-    font-family: "Roboto";
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.1875;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background: #F8D24E;
-    border-radius: 10px;
-    margin-top: 24px;
-    margin-bottom: 25px;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: var(--brand-color-white-text);
-    width: 164px;
-    height: 42px;
+	font-family: "Roboto";
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.1875;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background: var(--second-color);
+	border-radius: 10px;
+	margin-top: 24px;
+	margin-bottom: 25px;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.04em;
+	color: var(--brand-color-white-text);
+	width: 164px;
+	height: 42px;
 }
 
 .button-studio:hover,
 .button-studio:focus {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .iframe-video {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	width: 224px;
+	height: 199px;
 }
 
-.foto {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
+.title-video {
+	width: 224px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 28px;
+}
+
+.foto-about {
+	position: relative;
+	display: flex;
+	width: 280px;
+	height: 280px;
+	background-color: var(--second-color);
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+}
+
+.cow {
+	position: absolute;
+	top: 20px;
+	left: 0;
+}
+
+.fon {
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .title-tradition {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.22;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 60px;
-    margin-bottom: 12px;
-    color: #FCFCFC;
+	font-family: "Montserrat";
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.22;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+	margin-bottom: 12px;
+	color: var(--focus-color);
 }
 
 .title-how {
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 1.26;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 32px;
-    color: #FCFCFC;
+	font-family: "Seymour One";
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 1.26;
+	text-align: center;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 32px;
+	color: var(--focus-color);
 }
 
 .about-list {
-    gap: 4px;
-    margin: 0 auto;
-    padding: 0;
+	gap: 4px;
+	margin: 0 auto;
+	padding: 0;
 }
 
 .about-item {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 162%;
-    color: #FCFCFC;
-    width: 220px;
-    margin: 0;
-    list-style: none;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 162%;
+	color: var(--focus-color);
+	width: 220px;
+	margin: 0;
+	list-style: none;
 }
 
 .subtitle {
-    margin: 0;
+	font-family: "Montserrat";
+	margin: 0;
 }
-
 
 /* Стили для подложки */
 
 .overlay {
+	/* Скрываем подложку  */
+	opacity: 0;
+	visibility: hidden;
 
-    /* Скрываем подложку  */
-    opacity: 0;
-    visibility: hidden;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .5);
-    z-index: 20;
-    transition: .3s all;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 20;
+	transition: 0.3s all;
 }
-
 
 /* Стили для модальных окон */
 
-.modal {
+.wind-modal {
+	/* Скрываем окна  */
+	opacity: 0;
+	visibility: hidden;
+	height: 459px;
+	padding-left: 28px;
+	padding-right: 28px;
+	padding-top: 28px;
+	padding-bottom: 20px;
+	border: 2px solid var(--second-color);
+	border-radius: 10px;
 
-    /* Скрываем окна  */
-    opacity: 0;
-    visibility: hidden;
-    height: 459px;
-    padding-left: 28px;
-    padding-right: 28px;
-    padding-top: 28px;
-    padding-bottom: 20px;
-    border: 2px solid yellow;
-    border-radius: 10px;
+	/*  Установаем ширину окна  */
+	width: 100%;
+	max-width: 280px;
 
-    /*  Установаем ширину окна  */
-    width: 100%;
-    max-width: 280px;
+	/*  Центрируем и задаем z-index */
+	position: fixed;
+	z-index: 30;
+	/* Должен быть выше чем у подложки*/
 
-    /*  Центрируем и задаем z-index */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 30;
-    /* Должен быть выше чем у подложки*/
-
-    /*  Побочные стили   */
-    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
-    text-align: center;
-    padding: 30px;
-    background-color: #fff;
-    transition: 0.3s all;
+	/*  Побочные стили   */
+	box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	padding: 30px;
+	background-color: var(--focus-color);
+	transition: 0.3s all;
 }
-
 
 /* Стили для активных классов подложки и окна */
 
 .modal.active,
 .overlay.active {
-    opacity: 1;
-    visibility: visible;
-
-
+	opacity: 1;
+	visibility: visible;
 }
-
 
 /* Стили для кнопки закрытия */
-
 .modal__cross {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    fill: #444;
-    cursor: pointer;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	fill: #444;
+	cursor: pointer;
 }
-
 
 /* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
 
-.js-open-modal {
-    width: 164px;
-    height: 42px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 34px;
-    display: inline-block;
-    text-decoration: none;
-    background-color: yellow;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #000000;
-    border-radius: 10px;
+.modal-open {
+	width: 164px;
+	height: 42px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 34px;
+	display: inline-block;
+	text-decoration: none;
+	background-color: var(--second-color);
+	margin-top: 10px;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #000000;
+	border-radius: 10px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.28;
+	animation: animate105 3s 1s infinite;
 }
+
+.modal-open:hover {
+	background-color: var(--hover-color);
+}
+.modal-open:focus {
+	background-color: var(--hover-color);
+	color: var(--focus-color);
+}
+.modal-open:focus .about-item_icon{
+	fill: var(--focus-color);
+}
+
+.list-button {
+	position: relative;
+}
+.about-item_icon{
+	fill: #000000;
+	margin-left: 4px;
+	transition: all 1s;
+}
+.about_button{
+	display: flex;
+	align-items: center;
+}
+
+/*================стиль для кнопки модалки========*/
+.icon-svg {
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	top: 79%;
+	right: 35%;
+	fill: #444;
+}
+
+/*---------- tablet --------------*/
+@media screen and (min-width: 768px) {
+	.about {
+		width: 768px;
+		flex-direction: column;
+	}
+
+	.wind-modal {
+		max-width: 568px;
+	}
+
+	.iframe-video {
+		width: 448px;
+	}
+
+	.title-video {
+		width: 448px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 32px;
+		margin-bottom: 32px;
+	}
+
+	.foto-about {
+		position: relative;
+		display: flex;
+		width: 330px;
+		height: 330px;
+		background-color: var(--second-color);
+		border-radius: 50%;
+		margin-left: 0;
+		margin-right: 38px;
+
+		margin-bottom: 0;
+	}
+
+	.cow {
+		width: 330px;
+		height: 330px;
+		position: absolute;
+		top: 20px;
+		left: 0;
+	}
+
+	.text-about {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+	}
+
+	.title-how {
+		font-family: "Seymour One";
+		margin-bottom: 80px;
+	}
+
+	.about-list {
+		margin-top: 0;
+	}
+
+	.about-item {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 194%;
+		color: var(--focus-color);
+		width: 330px;
+		margin: 0;
+		list-style: none;
+	}
+
+	.list-button {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		width: 330px;
+	}
+
+	.modal-open {
+		width: 164px;
+		height: 42px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		padding-left: 34px;
+		display: inline-block;
+		text-decoration: none;
+		background-color: var(--second-color);
+		margin-top: 32px;
+		margin-bottom: 50px;
+		margin-left: 0;
+		color: #000000;
+		border-radius: 10px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 1.28;
+		animation: animate105 3s 1s infinite;
+	}
+	.modal-p {
+		font-family: "Seymour One";
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 1.4;
+	}
+	.icon-svg {
+		width: 12px;
+		height: 12px;
+		position: absolute;
+		top: 83%;
+		right: 60%;
+		fill: #444;
+	}
+
+	.icon-svg:focus {
+		background-color: var(--hover-color);
+		color: var(--focus-color);
+		fill: var(--focus-color);
+	}
+}
+
+/*============= DISCTOP============*/
+
+@media screen and (min-width: 1200px) {
+	.about {
+		width: 1200px;
+		flex-direction: column;
+	}
+
+	.foto-about {
+		position: relative;
+		display: flex;
+		width: 480px;
+		height: 480px;
+		background-color: var(--second-color);
+		border-radius: 50%;
+		margin-left: 0;
+		margin-right: 109px;
+
+		margin-bottom: 60px;
+	}
+
+	.cow {
+		width: 480px;
+		height: 480px;
+		position: absolute;
+		top: 20px;
+		left: 0;
+	}
+
+	.text-about {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+	}
+
+	.about-list {
+		margin-top: 0;
+	}
+
+	.about-item {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 194%;
+		color: var(--focus-color);
+		width: 463px;
+		margin: 0;
+		list-style: none;
+	}
+
+	.list-button {
+		display: flex;
+		flex-direction: column;
+		width: 463px;
+		position: relative;
+	}
+
+	.icon-svg {
+		width: 12px;
+		height: 12px;
+		position: absolute;
+		top: 70%;
+		right: 73%;
+		fill: #444;
+	}
+
+	.icon-svg:focus {
+		background-color: var(--hover-color);
+		color: var(--focus-color);
+		fill: var(--focus-color);
+	}
+
+	.modal-open {
+		width: 164px;
+		height: 42px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		padding-left: 34px;
+		display: inline-block;
+		text-decoration: none;
+		background-color: var(--second-color);
+		margin-top: 60px;
+		margin-bottom: 50px;
+		margin-left: 0;
+		color: #000000;
+		border-radius: 10px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 1.28;
+		animation: animate105 3s 1s infinite;
+	}
+}
+
+

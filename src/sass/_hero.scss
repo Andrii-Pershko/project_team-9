@@ -2,12 +2,6 @@
 	--transition-dur-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-// img {
-// 	display: block;
-// 	width: 100%;
-// 	height: auto;
-// }
-
 .hero {
 	position: relative;
 
@@ -15,9 +9,9 @@
 	background-repeat: no-repeat;
 }
 
-.title {
+.hero-title {
 	width: 247px;
-	margin-top: 50px;
+	text-align: left;
 	font-family: "Seymour One";
 	font-size: 26px;
 	line-height: 1.27;
@@ -54,24 +48,53 @@
 	font-family: inherit;
 	align-items: center;
 	transition: border-color var(--transition-dur-func);
-	animation: animate125 3000ms infinite 1000ms;
+	overflow: hidden;
+	animation: animate105 3000ms infinite 1000ms;
+}
+
+@keyframes animate105 {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.05);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }
 
 .products-btn:hover,
 .products-btn:focus {
 	border-color: var(--hover-color);
-	@keyframes animate125 {
-		0% {
-			transform: scale(1);
-		}
+}
 
-		50% {
-			transform: scale(1.05);
-		}
+.products-btn::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1em;
+	height: 100%;
+	text-decoration: none;
 
-		100% {
-			transform: scale(1);
-		}
+	background-color: rgba(#f8d24e, 0.05);
+	transform: skewX(-45deg);
+	animation: shine 2000ms infinite;
+}
+
+.products-btn:hover::before {
+	background-color: rgba(#0a8817, 0.05);
+}
+
+@keyframes shine {
+	from {
+		transform: skewX(-45deg);
+	}
+	to {
+		transform: translateX(10em) skewX(-45deg);
 	}
 }
 
@@ -100,6 +123,10 @@
 
 .made-link:focus {
 	color: var(--focus-color);
+}
+
+.made-link:disabled {
+	color: var(--disablet-color);
 }
 
 .quantity {
@@ -144,6 +171,22 @@
 
 .many-ice-cream {
 	margin-top: 12px;
+
+	animation-name: spin;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-delay: 1000ms;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 .ice-text-arrow {
@@ -173,6 +216,8 @@
 @media screen and (max-width: 479px) {
 	.hero {
 		height: 502px;
+		padding-top: 50px;
+		padding-bottom: 425px;
 	}
 
 	.ice-cream {
@@ -209,12 +254,15 @@
 // ======================================== MOBILE ===========================================
 
 @media screen and (min-width: 480px) {
-	.title {
-		margin-top: 40px;
+	.hero-title {
+		margin-top: 0px;
 	}
 
 	.ice-cream {
 		width: 218px;
+	}
+	.hero {
+		padding-top: 40px;
 	}
 }
 
@@ -224,15 +272,22 @@
 	.hero {
 		background-image: url(../images/img/hero/tablet/dotts.png);
 		background-position: right 0 bottom 0;
+		padding-top: 14px;
 	}
 
-	.title {
-		margin-top: 14px;
+	.hero-title {
+		margin-top: 0;
 	}
 
 	.ice-cream {
 		padding-right: 92px;
 		width: 268px;
+	}
+	.quantity {
+		margin-top: 28px;
+	}
+	.number {
+		font-weight: 800;
 	}
 }
 
@@ -241,11 +296,14 @@
 @media screen and (min-width: 1200px) {
 	.hero {
 		background-image: url(../images/img/hero/desktop/dotts.png);
+		padding-top: 14px;
 	}
 
-	.title {
+	.hero-title {
 		width: 367px;
 		font-size: 38px;
+		text-align: left;
+		margin-top: 38px;
 	}
 
 	.passion {
@@ -254,6 +312,14 @@
 
 	.products-btn {
 		padding: 12px 34px;
+	}
+
+	.products-btn:focus {
+		color: var(--focus-color);
+	}
+
+	.products-btn:disabled {
+		border-color: var(disablet-color);
 	}
 
 	.made-link {
@@ -273,6 +339,7 @@
 
 	.many-ice-cream {
 		margin-top: 42px;
+		margin-bottom: 65px;
 	}
 
 	.text-arrow {
@@ -292,5 +359,6 @@
 
 	.quantity {
 		margin-right: 16px;
+		margin-top: 50px;
 	}
 }

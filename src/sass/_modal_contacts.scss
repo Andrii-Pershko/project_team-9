@@ -1,0 +1,117 @@
+.our-location-modal {
+	width: 280px;
+	background: #fcfcfc;
+	border: 2px solid #f8d24e;
+	border-radius: 10px;
+}
+
+.open-map-btn {
+	margin: auto;
+	display: block;
+}
+
+.map_location {
+	width: 224px;
+	height: 199px;
+}
+
+@media screen and (min-width: 768px) {
+	.map_location {
+		width: 448px;
+		height: 260px;
+	}
+	.our-location-modal {
+		width: 568px;
+	}
+}
+
+.title-modal-location {
+	margin-bottom: 32px;
+	font-family: "Seymour One";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28px;
+}
+
+///modal-franshise///
+.modal-franshise {
+	width: 282px;
+	padding: 28px 28px;
+}
+.modal-fran-text {
+	text-align: left;
+	margin-bottom: 32px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	/* or 22px */
+
+	color: #131313;
+}
+
+.franchise-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.franchise-input {
+	width: 224px;
+	height: 32px;
+	align-self: center;
+	background: rgba(248, 210, 78, 0.1);
+	border: 1px solid #84a178;
+	border-radius: 10px;
+	padding: 11px 16px;
+}
+textarea {
+	resize: none;
+	border: 0;
+}
+.add {
+	height: 64px;
+}
+.franchise-lable:not(:last-child) {
+	margin-bottom: 16px;
+}
+
+.header-button {
+	display: inline-block;
+}
+
+.button-open-map {
+	margin-top: 32px;
+	filter: drop-shadow(0 4px 4px #00000040);
+}
+.margin-right {
+	margin-left: 0;
+}
+
+.submit-btn {
+	margin-top: 32px;
+}
+
+@media screen and (min-width: 768px) {
+	.modal-franshise {
+		width: 568px;
+		padding: 32px 60px;
+	}
+
+	.franchise-input {
+		width: 368px;
+		height: 42px;
+	}
+	.add {
+		height: 84px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.modal-franshise {
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, 0);
+		max-height: 100%;
+		overflow-y: scroll;
+	}
+}

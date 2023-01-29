@@ -1,0 +1,385 @@
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	color: #131313;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 186%;
+}
+
+.content-button {
+	background-color: var(--primal-color);
+}
+.address {
+	background-color: var(--primal-color);
+}
+ul {
+	padding: 0;
+}
+
+p,
+ul {
+	margin: 0;
+}
+
+/*.address {
+    display: flex;
+    justify-content: space-around;
+}*/
+
+.card-address {
+	width: 280px;
+	height: 412px;
+	background-color: #fcfcfc;
+	padding: 40px 32px;
+	border-radius: 24px;
+	box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+	margin-bottom: 16px;
+}
+.card-address:nth-child(1) {
+	margin-top: -353px;
+}
+
+.title {
+	display: none;
+}
+
+.name-cafe {
+	color: #131313;
+	background-color: #f8d24e;
+	text-align: center;
+	margin-bottom: 20px;
+	width: 80px;
+	height: 22px;
+	border-radius: 4px;
+}
+
+.name-food {
+	color: #131313;
+	background-color: #f8d24e;
+	text-align: center;
+	margin-bottom: 20px;
+	width: 130px;
+	height: 22px;
+	border-radius: 4px;
+}
+
+.li-town {
+	margin-bottom: 48px;
+}
+
+.town {
+	margin-bottom: 8px;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.town {
+}
+
+.link-address {
+	position: relative;
+	color: #d6936d;
+	line-height: 183%;
+	height: 50px;
+	display: block;
+}
+.link-address:focus,
+.link-address:hover {
+	text-decoration: underline;
+}
+
+.link-address::after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 216px;
+	bottom: -24px;
+	border: 1px solid #e1e1e1;
+}
+
+.li-time {
+	position: relative;
+	margin-top: 8px;
+	margin-bottom: 48px;
+}
+
+.li-time::after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 216px;
+	bottom: -24px;
+	border: 1px solid #e1e1e1;
+}
+
+.time {
+	color: #ababab;
+}
+
+.tell {
+	line-height: 160%;
+	color: #131313;
+}
+
+.mail {
+	line-height: 160%;
+	color: #131313;
+}
+
+.button-locations {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 196px;
+	height: 42px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.28;
+	color: #131313;
+	background-color: #f8d24e;
+	border-radius: 10px;
+	border: none;
+	margin-bottom: 16px;
+}
+
+.button-locations:hover {
+	color: #000000;
+	background-color: #0a8817;
+}
+
+.button-locations:focus {
+	color: #ffffff;
+
+	background-color: #0a8817;
+}
+
+.button-locations:disabled {
+	color: #131313;
+	background-color: #ababab;
+}
+
+.button-franchise {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 196px;
+	height: 42px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.28;
+	color: #000000;
+	background-color: transparent;
+	border: 2px solid #f8d24e;
+	border-radius: 10px;
+}
+
+.button-franchise:hover {
+	color: #000000;
+
+	border: 2px solid #0a8817;
+}
+
+.button-franchise:focus {
+	color: #ffffff;
+
+	border: 2px solid #0a8817;
+}
+
+.button-franchise:disabled {
+	color: #000000;
+	border: 2px solid #111111;
+}
+
+.button-icon {
+	width: 12px;
+	height: 12px;
+	fill: currentColor;
+}
+
+@media screen and (max-width: 767px) {
+	.content-button {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.address {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	body {
+		color: #131313;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 186%;
+	}
+
+	.address {
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.card-address:nth-child(1) {
+		margin-top: -299px;
+	}
+	.card-address {
+		width: 224px;
+		height: 537px;
+		background-color: #fcfcfc;
+		padding: 40px 24px;
+		border-radius: 24px;
+		box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+		margin-bottom: 40px;
+		margin-top: -299px;
+	}
+
+	.name-cafe {
+		font-size: 16px;
+		line-height: 140%;
+		color: #131313;
+		background-color: #f8d24e;
+		text-align: center;
+		margin-bottom: 32px;
+		width: 73px;
+		height: 30px;
+		border-radius: 6px;
+	}
+
+	.name-food {
+		font-size: 16px;
+		line-height: 140%;
+		color: #131313;
+		background-color: #f8d24e;
+		text-align: center;
+		margin-bottom: 32px;
+		width: 138px;
+		height: 30px;
+		border-radius: 6px;
+	}
+
+	.town {
+		margin-bottom: 12px;
+	}
+
+	.li-town {
+		margin-bottom: 64px;
+	}
+
+	.link-address::after {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 176px;
+		bottom: -32px;
+		border: 1px solid #e1e1e1;
+	}
+
+	.li-time::after {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 176px;
+		bottom: -32px;
+		border: 1px solid #e1e1e1;
+	}
+
+	.content-button {
+		display: flex;
+		justify-content: center;
+	}
+
+	.button-locations {
+		width: 196px;
+		height: 42px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 1.28;
+		color: #131313;
+		background-color: #f8d24e;
+		border-radius: 10px;
+		border: none;
+		margin-right: 16px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	body {
+		font-size: 16px;
+	}
+
+	.address {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.card-address {
+		width: 368px;
+		height: 542px;
+		background-color: #ffffff;
+		padding: 40px 40px;
+		border-radius: 24px;
+		box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+		margin-bottom: 60px;
+		margin-top: -128px;
+	}
+	.card-address:nth-child(1) {
+		margin-top: -128px;
+	}
+
+	.name-cafe {
+		width: 76px;
+		height: 30px;
+	}
+
+	.name-food {
+		width: 148px;
+		height: 30px;
+	}
+
+	.link-address::after {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 288px;
+		bottom: -32px;
+		border: 1px solid #e1e1e1;
+	}
+
+	.li-time::after {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 288px;
+		bottom: -32px;
+		border: 1px solid #e1e1e1;
+	}
+
+	.content-button {
+		display: flex;
+		justify-content: center;
+	}
+
+	.button-locations {
+		margin-right: 16px;
+	}
+}

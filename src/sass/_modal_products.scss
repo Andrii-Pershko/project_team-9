@@ -1,20 +1,22 @@
 
 // Icecream
 
+
 .modal-ingredients {
-    position: absolute;
+    // position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 280px;
-    /* height: 968px; */
+    height: 968px;
     padding: 28px 20px;
-    background-color: #FCFCFC;
-    border: 2px solid #F8D24E;
+    background-color: var(--focus-color);
+    border: 2px solid var(--second-color);
     border-radius: 10px;
 
     max-height: 100%;
-    overflow-y: auto
+    overflow-y: scroll;
+ 
 }
 
 
@@ -44,7 +46,6 @@
 .modal-icecream-img {
     position: absolute;
     display: block;
-    // transform: translatey(-7px);
     bottom: 7px;
     border-radius: 50%;
     
@@ -64,7 +65,7 @@ transition-duration: 500ms;
     margin-top: 23px;
 }
 
-.modal-list-contane {
+.modal-list-contane-icecream {
     display: flex;
     width: 53px;
     height: 72px;
@@ -83,7 +84,7 @@ transition-duration: 500ms;
     color: #131313;
 }
 
-.contane {
+.contane-icecream {
     display: flex;
     justify-content: center;
     width: 43px;
@@ -97,7 +98,7 @@ transition-duration: 500ms;
     transition-duration: 200ms;
 }
 
-.contane:hover  {
+.contane-icecream:hover  {
 transform: translatey(10px);
 transition-property: transform;
 transition-duration: 200ms;
@@ -146,6 +147,8 @@ margin-top: 24px;
 
 .modal-ingredients-item:not(:last-child) {
     margin-bottom: 11px;
+
+    // form
 }
 
 .modal-ingredients-form {
@@ -153,7 +156,7 @@ margin-top: 24px;
 }
 
 
-.modal-ingredients-form-input {
+.modal-icecream-form-input {
     position: relative;
     background-color: rgba(248, 210, 78, 0.1);
     outline: none;
@@ -163,10 +166,9 @@ margin-top: 24px;
     border: 1px solid #84A178;
     margin-bottom: 16px;
     padding: 11px;
-   
-}
+   }
 
-.modal-ingredients-form-input::placeholder {
+.modal-icecream-form-input::placeholder {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -176,7 +178,7 @@ margin-top: 24px;
 }
 
 
-.modal-ingredients-form-input-text {
+.modal-icecream-form-input-text {
     display: block;
     resize: none;
     width: 100%;
@@ -191,7 +193,7 @@ margin-top: 24px;
 }
 
 
-.modal-ingredients-form-input-text::placeholder {
+.modal-icecream-form-input-text::placeholder {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -201,17 +203,26 @@ margin-top: 24px;
 }
 
 
-.modal-ingredients-subscribe-button {
-    
-    margin-top: 24px;
+.modal-icecream-form-input:hover,
+.modal-ingredients-form-input:focus {
+    border-color: var(--second-color);
+}
 
+.modal-icecream-form-input-text:hover,
+.modal-icecream-form-input-text:focus {
+    border-color: var(--second-color);
+}
+
+
+
+.modal-ingredients-subscribe-button {
     display: flex;
     margin: 24px auto 0;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: bacgraund-color;
     color: #131313;
-    background-color:#F8D24E;;
+    background-color: var(--second-color);
     width: 132px;
     height: 42px;
     justify-content: center;
@@ -223,8 +234,20 @@ margin-top: 24px;
     font-size: 14px;
     line-height: 1.2;
     padding: 12px 34px;
-    cursor: pointer;
+    
 }
+
+.modal-ingredients-subscribe-button:hover,
+.modal-ingredients-subscribe-button:focus {
+    background: var(--hover-color);
+    
+}
+
+.modal-ingredients-subscribe-button:active {
+    color: var #ffffff;
+
+}
+
 
 
 // Icecoffe
@@ -255,6 +278,100 @@ margin-top: 24px;
     transition-duration: 500ms;
     }
 
+    .modal-list-contane-icecoffe {
+        display: flex;
+        width: 53px;
+        height: 72px;
+        border: 2px solid #EFD478;
+        border-radius: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contane-icecoffe {
+        display: flex;
+        justify-content: center;
+        width: 43px;
+        height: 43px;
+        border-radius: 50%;
+        background: #EFD478;
+        border: 2px solid #EFD478;
+        box-shadow: 0 5.26027px 19.726px #EFD478;  
+        align-items: center;
+        transition-property: transform;
+        transition-duration: 200ms;
+    }
+
+    .contane-icecoffe:hover  {
+        transform: translatey(10px);
+        transition-property: transform;
+        transition-duration: 200ms;
+        background-color: #D6936D;
+        border: 2px solid #D6936D;
+        }
+
+
+
+
+        .modal-icecoffe-form-input {
+            position: relative;
+            background-color: rgba(248, 210, 78, 0.1);
+            outline: none;
+            width: 100%;
+            height: 42px;
+            border-radius: 10px;
+            border: 1px solid var(--second-color);
+            margin-bottom: 16px;
+            padding: 11px;
+           
+        }
+        
+        .modal-icecoffe-form-input::placeholder {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%;
+            color: #131313;
+        }
+        
+        
+        .modal-icecoffe-form-input-text {
+            display: block;
+            resize: none;
+            width: 100%;
+            height: 84px;
+            border: 1px solid var(--second-color);
+            border-radius: 10px;
+            outline: none;
+            background-color: rgba(248, 210, 78, 0.1);
+            padding: 11px;
+            /* margin-bottom: 16px; */
+        
+        }
+        
+        
+        .modal-icecoffe-form-input-text::placeholder {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%;
+            color: #131313;
+        }
+        
+        
+        .modal-icecoffe-form-input:hover,
+        .modal-icecoffe-form-input:focus {
+            border-color: #D6936D;
+        }
+        
+        .modal-icecoffe-form-input-text:hover,
+        .modal-icecoffe-form-input-text:focus {
+            border-color: #D6936D;
+        }
+        
+
 
 // milkshakes
 
@@ -262,7 +379,7 @@ margin-top: 24px;
     position: relative;
     width: 132px;
     height: 132px;
-    background-color: #D6936D;
+    background-color: rgba(214, 147, 109, 0.7);
     border-radius: 50%;
     box-shadow:  0 5.26027px 19.726px #D6936D;
     margin: 0 auto;
@@ -275,7 +392,6 @@ margin-top: 24px;
     bottom: 7px;
     border-radius: 50%;
     
-
 }
 
 .modal-milkshakes-img:hover {
@@ -285,17 +401,110 @@ margin-top: 24px;
     }
 
 
+    .modal-list-contane-milkshakes {
+        display: flex;
+        width: 53px;
+        height: 72px;
+        border: 2px solid rgb(214, 147, 109);
+        border-radius: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contane-milkshakes {
+        display: flex;
+        justify-content: center;
+        width: 43px;
+        height: 43px;
+        border-radius: 50%;
+        background: #D6936D;
+        border: 2px solid #D6936D;
+        box-shadow: 0px 6px 20px rgba(214, 147, 109, 0.25);
+        align-items: center;
+        transition-property: transform;
+        transition-duration: 200ms;
+    }
+
+    .contane-milkshakes:hover  {
+        transform: translatey(10px);
+        transition-property: transform;
+        transition-duration: 200ms;
+        background-color: #EFD478;
+        border: 2px solid #EFD478;
+        }
 
 
-// Tablet, Desctop
 
-@media screen and (min-width: 480px) {
+        .modal-milkshakes-form-input {
+            position: relative;
+            background-color: rgba(248, 210, 78, 0.1);
+            outline: none;
+            width: 100%;
+            height: 42px;
+            border-radius: 10px;
+            border: 1px solid #D6936D;
+            margin-bottom: 16px;
+            padding: 11px;
+           
+        }
+        
+        .modal-milkshakes-form-input::placeholder {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%;
+            color: #131313;
+        }
+        
+        
+        .modal-milkshakes-form-input-text {
+            display: block;
+            resize: none;
+            width: 100%;
+            height: 84px;
+            border: 1px solid #D6936D;
+            border-radius: 10px;
+            outline: none;
+            background-color: rgba(248, 210, 78, 0.1);
+            padding: 11px;
+            /* margin-bottom: 16px; */
+        
+        }
+        
+        
+        .modal-milkshakes-form-input-text::placeholder {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%;
+            color: #131313;
+        }
+        
+        
+        .modal-milkshakes-form-input:hover,
+        .modal-milkshakes-form-input:focus {
+            border-color: var(--second-color);
+        }
+        
+        .modal-milkshakes-form-input-text:hover,
+        .modal-milkshakes-form-input-text:focus {
+            border-color: var(--second-color);
+        }
+
+
+
+
+
+// Desctop
+
+@media screen and (min-width: 768px) {
     .modal-ingredients {
     max-width: 568px;
     padding: 32px 40px;
+    height: 996px;
 }
-
-
 
 
 .modal-ingredients-list {
@@ -304,16 +513,39 @@ margin-top: 24px;
     margin-top: 25px;
 }
 
-.modal-list-contane {
+.modal-list-contane-icecream {
     width: 65px;
     height: 90px;
 }
 
-.contane {
+.contane-icecream {
 width: 53px;
 height: 53px;
     
 }
+
+.modal-list-contane-icecoffe {
+    width: 65px;
+    height: 90px;
+}
+
+.contane-icecoffe {
+width: 53px;
+height: 53px;
+    
+}
+
+.modal-list-contane-milkshakes {
+    width: 65px;
+    height: 90px;
+}
+
+.contane-milkshakes {
+width: 53px;
+height: 53px;
+    
+}
+
 
 .title-modal-ingredients {
     margin-bottom: 31px;
@@ -322,6 +554,8 @@ height: 53px;
 .modal-ingredients-text-amount {
     font-size: 12px;
 }
+
+
 
 .modal-ingredients-text-contane {
     font-size: 12px;
@@ -336,11 +570,27 @@ line-height: 1.25px;
         margin-top: 48px;
     }
 
+    
+
 
     .modal-ingredients-subscribe-button {
         width: 121px;
         margin-top: 32px;
     }
 
+
+    
+    .modal-icecream-form-input,
+    .modal-icecoffe-form-input,
+    .modal-milkshakes-form-input {
+        width: 368px;
+    }
+
+    .modal-icecream-form-input-text,
+    .modal-icecoffe-form-input-text,
+    .modal-milkshakes-form-input-text {
+        width: 368px;
+        margin: 0 auto;
+    }
 
 }
