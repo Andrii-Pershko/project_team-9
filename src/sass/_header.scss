@@ -2,6 +2,8 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	padding-bottom: 12px;
 }
 
 .header {
@@ -9,7 +11,7 @@
 	width: 100%;
 	left: 50%;
 	transform: translate(-50%, 0);
-	z-index: 1000;
+	z-index: 2;
 	background-color: rgba(132, 161, 120, 0.8);
 }
 .logo-img {
@@ -18,11 +20,11 @@
 }
 
 .navigation {
-	padding-top: 12px;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
+	padding-top: 12px;
 }
 
 /* ================ MOBIL MENU ==================== */
@@ -216,9 +218,6 @@
 @media screen and (min-width: 768px) {
 	.header-button {
 		display: none;
-	}
-	.navigation {
-		padding-top: 20px;
 	}
 
 	.mobile-modal-btn {

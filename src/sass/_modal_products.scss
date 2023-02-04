@@ -6,7 +6,7 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	max-width: 280px;
-	height: 968px;
+	max-height: 968px;
 	padding: 28px 20px;
 	background-color: var(--focus-color);
 	border: 2px solid var(--second-color);
@@ -534,4 +534,5 @@
 
 .modal-ingredients {
 	height: 90%;
+	max-height: 996px;
 }

@@ -154,7 +154,7 @@
 @media screen and (max-width: 767px) {
 	.buy_now {
 		height: 90%;
-		overflow: hidden;
+
 		overflow-y: auto;
 	}
 }
@@ -222,7 +222,7 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		max-height: 575px;
+		max-height: 600px;
 		height: 90%;
 	}
 }
