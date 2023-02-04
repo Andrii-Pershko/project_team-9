@@ -24,11 +24,12 @@ li {
 }
 
 :root {
-	--primal-color: #84a178;
+	--primal-color: rgb(132, 161, 120);
 	--second-color: #f8d24e;
 	--hover-color: #0a8817;
 	--focus-color: #fcfcfc;
 	--disablet-color: #ababab;
+	--transition-dur-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 h1,

@@ -2,11 +2,15 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: var(--primal-color);
 }
 
 .header {
-	background-color: var(--primal-color);
+	position: fixed;
+	width: 100%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	z-index: 1000;
+	background-color: rgba(132, 161, 120, 0.8);
 }
 .logo-img {
 	width: 40px;

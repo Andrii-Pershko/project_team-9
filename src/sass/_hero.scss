@@ -1,9 +1,6 @@
-:root {
-	--transition-dur-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .hero-header {
 	background-color: var(--primal-color);
+	padding-top: 65px;
 }
 .hero {
 	position: relative;
