@@ -153,7 +153,7 @@
 }
 @media screen and (max-width: 767px) {
 	.buy_now {
-		height: 100%;
+		height: 90%;
 		overflow: hidden;
 		overflow-y: auto;
 	}
@@ -168,7 +168,7 @@
 
 	.buy_now {
 		max-width: 568px;
-		height: 644px;
+
 		margin: 0 auto;
 		overflow: hidden;
 	}
@@ -203,7 +203,7 @@
 	.buy_now-input:focus,
 	.buy_now-textarea:hover,
 	.buy_now-textarea:focus {
-			box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+		box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
 	}
 }
 

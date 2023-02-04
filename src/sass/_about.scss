@@ -196,6 +196,9 @@
 	padding: 30px;
 	background-color: var(--focus-color);
 	transition: 0.3s all;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
 }
 
 /* Стили для активных классов подложки и окна */
