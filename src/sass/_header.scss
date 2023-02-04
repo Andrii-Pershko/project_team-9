@@ -104,7 +104,8 @@
 .mobile-menu-link:focus {
 	color: var(--focus-color);
 }
-.menu-link:hover {
+.menu-link:hover,
+.menu-link:focus {
 	color: #131313;
 }
 
@@ -271,10 +272,6 @@
 		line-height: 1.25;
 		display: flex;
 		align-items: center;
-		color: var(--focus-color);
-	}
-
-	.menu-link:focus {
 		color: var(--focus-color);
 	}
 

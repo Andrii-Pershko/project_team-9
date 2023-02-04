@@ -6,6 +6,7 @@
 	top: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+	overflow: auto;
 }
 
 .open-map-btn {
@@ -41,6 +42,7 @@
 .modal-franshise {
 	width: 282px;
 	padding: 28px 28px;
+	max-height: 680px;
 }
 .modal-fran-text {
 	text-align: left;
@@ -96,6 +98,7 @@ textarea {
 
 @media screen and (min-width: 768px) {
 	.modal-franshise {
+		height: 90%;
 		width: 568px;
 		padding: 32px 60px;
 	}

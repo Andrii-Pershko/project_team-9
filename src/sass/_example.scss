@@ -36,6 +36,22 @@ h6 {
 	margin: 0;
 }
 
+.scrollup {
+	width: 40px;
+	height: 40px;
+	opacity: 0.3;
+	position: fixed;
+	bottom: 50px;
+	right: 1%;
+	display: none;
+	text-indent: -9999px;
+	background: url("/src/images/icon_top.png") no-repeat;
+}
+
+.scrollup:hover {
+	opacity: 0.5;
+}
+
 body {
 	font-family: "Monserate", sans-serif;
 	font-weight: 500;
@@ -151,5 +167,8 @@ body {
 		transform: translate(-50%, -50%);
 		top: 50%;
 		left: 50%;
+	}
+	.scrollup {
+		right: 16px;
 	}
 }

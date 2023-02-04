@@ -1,4 +1,28 @@
-
-
 <!-- Подложка под модальным окном -->
 <div class="overlay js-overlay-modal"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<!-- // jquery -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$(".scrollup").fadeIn();
+			} else {
+				$(".scrollup").fadeOut();
+			}
+		});
+
+		$(".scrollup").click(function () {
+			$("html, body").animate({ scrollTop: 0 }, 600);
+			return false;
+		});
+	});
+</script>
+<!-- // slick.min.js -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="module" src="./js/slider-script.js"></script>
+<a href="#" class="scrollup">Наверх</a>

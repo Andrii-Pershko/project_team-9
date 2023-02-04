@@ -169,8 +169,12 @@
 	.buy_now {
 		max-width: 568px;
 
-		margin: 0 auto;
-		overflow: hidden;
+		max-height: 575px;
+		height: 90%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		overflow: scroll;
 	}
 
 	.buy_now-list_wrap {
@@ -215,10 +219,10 @@
 	}
 
 	.buy_now {
-		height: 100%;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		max-height: 575px;
+		height: 90%;
 	}
 }
