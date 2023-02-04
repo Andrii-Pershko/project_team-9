@@ -111,6 +111,7 @@
 	margin-top: 60px;
 	margin-bottom: 12px;
 	color: var(--focus-color);
+	text-align: center;
 }
 
 .title-how {
@@ -246,19 +247,19 @@
 	background-color: var(--hover-color);
 	color: var(--focus-color);
 }
-.modal-open:focus .about-item_icon{
+.modal-open:focus .about-item_icon {
 	fill: var(--focus-color);
 }
 
 .list-button {
 	position: relative;
 }
-.about-item_icon{
+.about-item_icon {
 	fill: #000000;
 	margin-left: 4px;
 	transition: all 1s;
 }
-.about_button{
+.about_button {
 	display: flex;
 	align-items: center;
 }
@@ -276,7 +277,6 @@
 /*---------- tablet --------------*/
 @media screen and (min-width: 768px) {
 	.about {
-		width: 768px;
 		flex-direction: column;
 	}
 
@@ -394,7 +394,6 @@
 
 @media screen and (min-width: 1200px) {
 	.about {
-		width: 1200px;
 		flex-direction: column;
 	}
 
@@ -481,5 +480,3 @@
 		animation: animate105 3s 1s infinite;
 	}
 }
-
-

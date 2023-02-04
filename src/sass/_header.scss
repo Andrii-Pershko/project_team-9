@@ -5,6 +5,9 @@
 	background-color: var(--primal-color);
 }
 
+.header {
+	background-color: var(--primal-color);
+}
 .logo-img {
 	width: 40px;
 	height: 37px;
@@ -43,7 +46,6 @@
 .menu-container {
 	background-color: var(--primal-color);
 }
-
 .menu-logo-btn {
 	display: flex;
 	justify-content: space-between;
@@ -69,6 +71,7 @@
 	height: 100%;
 	z-index: 10;
 	transition: right 1000ms ease;
+	background-color: var(--primal-color);
 }
 
 .is-open {
@@ -100,6 +103,9 @@
 
 .mobile-menu-link:focus {
 	color: var(--focus-color);
+}
+.menu-link:hover {
+	color: #131313;
 }
 
 .mobile-modal-btn {

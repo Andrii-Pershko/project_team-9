@@ -451,7 +451,6 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
-		width: 768px;
 		padding-top: 60px;
 		margin-left: auto;
 		margin-right: auto;
@@ -675,19 +674,30 @@
 /*--FOR DESKTOP--*/
 
 @media screen and (min-width: 1200px) {
-	/*:root {
-		--card-set-gap: 29px;
-	}*/
 	.section {
-		background-image: url(/src/images/img/products/Backgroud/backgroud_desktop.png);
+		background-image: none;
+	}
+	.section-product {
+		background-image: url(/src/images/img/products/Backgroud/backgroud_mobile.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
-		width: 1200px;
-		padding-top: 60px;
-		margin-left: auto;
 		margin-right: auto;
+		margin-left: auto;
 	}
+	/*:root {
+		--card-set-gap: 29px;
+	}*/
+	// .section {
+	// 	background-image: url(/src/images/img/products/Backgroud/backgroud_desktop.png);
+	// 	background-repeat: no-repeat;
+	// 	background-position: center;
+	// 	background-size: cover;
+	// 	width: 1200px;
+	// 	padding-top: 60px;
+	// 	margin-left: auto;
+	// 	margin-right: auto;
+	// }
 	.container.products {
 		margin-left: auto;
 		margin-right: auto;

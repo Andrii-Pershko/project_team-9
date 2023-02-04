@@ -37,10 +37,6 @@ img {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
-.container {
-	padding-right: 16px;
-	padding-left: 16px;
-}
 
 /* GALLERY */
 
@@ -221,14 +217,6 @@ img {
 
 /* -------ADAPTIVE-------- */
 
-@media screen and (min-width: 480px) {
-	.container {
-		width: 480px;
-
-		margin-right: auto;
-		margin-left: auto;
-	}
-}
 @media screen and (max-width: 767px) {
 	.gallery {
 		margin-bottom: 80px;
@@ -279,9 +267,6 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-	.container {
-		width: 768px;
-	}
 	.div-style {
 		max-width: 704px;
 		height: 293px;
@@ -337,9 +322,7 @@ img {
 	.slick-dots li {
 		list-style: none;
 	}
-	.container {
-		width: 1200px;
-	}
+
 	.div-style {
 		max-width: 1013px;
 		height: 422px;
